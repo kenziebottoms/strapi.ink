@@ -7,7 +7,7 @@ import Copyright from '../elements/Copyright';
 
 const Art = () => (
   <React.Fragment>
-    <TileGrid id="art" dataSource="artsy" />
+    <TileGrid id="art" dataSource="code" />
     <Copyright />
   </React.Fragment>
 );
