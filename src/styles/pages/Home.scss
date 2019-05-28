@@ -1,5 +1,5 @@
-@import 'colors';
-@import 'breakpoints';
+@import '../colors';
+@import '../breakpoints';
 
 #home {
     font-size: 1.3rem;
@@ -16,6 +16,10 @@
         grid-row: span 3;
         font-size: 1rem;
         line-height: 1.55;
+    }
+
+    #copyright {
+        grid-column: 1 / -1;
     }
 
     i {

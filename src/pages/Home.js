@@ -1,7 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import '../styles/Home.scss';
+import '../styles/pages/Home.scss';
+
+import Copyright from '../elements/Copyright';
 
 const Home = () => (
   <div id="home">
@@ -54,6 +56,7 @@ const Home = () => (
       <i className="material-icons">stars</i>
       Achievements
     </Link>
+    <Copyright />
   </div>
 );
 
