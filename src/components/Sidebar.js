@@ -1,7 +1,9 @@
-import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
-import "../styles/Sidebar.scss";
+import Logo from '../elements/Logo';
+
+import '../styles/Sidebar.scss';
 
 class Sidebar extends Component {
   render() {
@@ -10,7 +12,11 @@ class Sidebar extends Component {
         {this.props.routes.map(route => (
           <li key={route.slug}>
             <Link to={route.path}>
-              <i class="material-icons">{route.icon}</i>
+              {route.icon ? (
+                <i class="material-icons">{route.icon}</i>
+              ) : (
+                <Logo link={false} />
+              )}
               <label>{route.name}</label>
             </Link>
           </li>

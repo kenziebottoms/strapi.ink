@@ -1,27 +1,29 @@
-import React from "react";
+import React from 'react';
 
-import Sidebar from "./components/Sidebar";
-import Content from "./components/Content";
+import Sidebar from './components/Sidebar';
+import Content from './components/Content';
+
+import './styles/App.scss';
 
 const routes = [
   {
-    name: "Home",
-    slug: "home",
-    path: "/home",
-    icon: false
+    name: 'Home',
+    slug: 'home',
+    path: '/home',
+    icon: false,
   },
   {
-    name: "Art",
-    slug: "art",
-    path: "/art",
-    icon: "color_lens"
+    name: 'Art',
+    slug: 'art',
+    path: '/art',
+    icon: 'color_lens',
   },
   {
-    name: "Code",
-    slug: "code",
-    path: "/code",
-    icon: "code"
-  }
+    name: 'Code',
+    slug: 'code',
+    path: '/code',
+    icon: 'code',
+  },
 ];
 
 function App() {
