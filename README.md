@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and then shaved down for Kenzie's personal use. It got rid of the service worker, the CSS, and the test class.
 
 ## Available Scripts
 
