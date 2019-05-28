@@ -14,8 +14,8 @@ class Content extends React.Component {
       <section id="content">
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route path="/art" component={Art} />
-          <Route path="/code" component={Code} />
+          <Route exact path="/art" component={Art} />
+          <Route exact path="/code" component={Code} />
           <Route path="/resume" component={Resume} />
         </Switch>
       </section>

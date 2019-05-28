@@ -1,7 +1,5 @@
 import React from 'react';
 
-import RESTDB from '../keys';
-
 import TileGrid from '../components/TileGrid';
 import Copyright from '../elements/Copyright';
 
