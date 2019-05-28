@@ -1,0 +1,27 @@
+@import 'breakpoints';
+
+#content {
+    height: 100vh;
+    overflow-y: auto;
+    padding: 0;
+    max-width: 75rem;
+    margin: auto;
+    display: block;
+    box-sizing: border-box;
+    padding: 1rem;
+
+    display: grid;
+    grid-template-rows: 1fr auto;
+
+    @media (min-width: $md-lg) {
+        padding: 3rem;
+    }
+
+    @media (min-height: 50rem) {
+        padding: 5rem 3rem;
+    }
+
+    @media (min-height: 60rem) {
+        padding: 7rem 3rem;
+    }
+}

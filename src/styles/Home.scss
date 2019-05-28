@@ -1,0 +1,45 @@
+@import 'colors';
+@import 'breakpoints';
+
+#home {
+    font-size: 1.3rem;
+
+    .block {
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #bio {
+        grid-row: span 3;
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+
+    i {
+        margin-bottom: 1rem;
+        font-size: 2em;
+        color: $black;
+    }
+
+    @media (min-width: $xs-sm) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+
+        .block {
+            margin: 0;
+            display: flex;
+        }
+        #bio,
+        .achievements {
+            grid-column: span 2;
+        }
+    }
+    @media (min-width: $sm-md) {
+        height: 100%;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
