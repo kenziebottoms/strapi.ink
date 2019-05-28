@@ -1,6 +1,6 @@
 import React from 'react';
 
-import '../styles/Copyright.scss';
+import '../styles/elements/Copyright.scss';
 
 const Copyright = () => (
   <a

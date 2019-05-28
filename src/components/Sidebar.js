@@ -1,12 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 import Logo from '../elements/Logo';
 
-import '../styles/Sidebar.scss';
+import '../styles/components/Sidebar.scss';
 
-class Sidebar extends Component {
-
+class Sidebar extends React.Component {
   routes() {
     return [
       {
@@ -39,8 +38,8 @@ class Sidebar extends Component {
         path: '/links',
         icon: 'launch',
       },
-    ]
-  };
+    ];
+  }
 
   render() {
     return (

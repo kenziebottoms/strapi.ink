@@ -1,9 +1,10 @@
-@import 'breakpoints';
+@import '../breakpoints';
 
 #content {
     height: 100vh;
     overflow-y: auto;
     max-width: 75rem;
+    width: 100%;
     margin: auto;
     box-sizing: border-box;
     padding: 1rem;

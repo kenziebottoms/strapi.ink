@@ -1,4 +1,4 @@
-@import "colors";
+@import '../colors';
 
 #sidebar {
     background: $white;
@@ -45,10 +45,10 @@
             word-wrap: wrap;
             text-decoration: none;
 
-            &[href="/"] {
+            &[href='/'] {
                 background: $green;
                 svg {
-                    path[fill="#000"] {
+                    path[fill='#000'] {
                         fill: $black;
                     }
                 }
@@ -59,7 +59,7 @@
                     color: $green;
 
                     svg {
-                        path[fill="#000"] {
+                        path[fill='#000'] {
                             fill: $green;
                         }
                     }

@@ -1,17 +1,19 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
-import '../styles/Content.scss';
+import '../styles/components/Content.scss';
 
 import Home from '../pages/Home';
+import Art from '../pages/Art';
 import Resume from '../pages/Resume';
 
-class Content extends Component {
+class Content extends React.Component {
   render() {
     return (
       <section id="content">
         <Switch>
           <Route exact path="/" component={Home} />
+          <Route path="/art" component={Art} />
           <Route path="/resume" component={Resume} />
         </Switch>
       </section>

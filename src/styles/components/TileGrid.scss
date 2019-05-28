@@ -1,0 +1,28 @@
+@import '../breakpoints';
+
+.tileGrid {
+    width: 100%;
+    @media (min-width: $xs-sm) {
+        .post .overlay {
+            padding: 2rem 1rem;
+        }
+    }
+
+    @media (min-width: $sm-md) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;
+    }
+
+    @media (min-width: $md-lg) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (min-width: $lg-xl) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    #copyright {
+        grid-column: 1 / -1;
+    }
+}
