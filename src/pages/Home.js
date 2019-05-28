@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import '../styles/Home.scss';
 
 const Home = () => (
   <div id="home">
-    <div id="bio" className="block resume">
+    <div id="bio" className="block wide">
       <p>
         Kenzie Bottoms is a feminist, artist, and developer born and raised in
         Nashville.{' '}
@@ -33,26 +34,26 @@ const Home = () => (
         .
       </p>
     </div>
-    <a className="block art" href="/#!/projects/art">
+    <Link className="block" to="/art">
       <i className="material-icons">color_lens</i>
       Art
-    </a>
-    <a className="block code" href="/#!/projects/code">
+    </Link>
+    <Link className="block" to="/code">
       <i className="material-icons">code</i>
       Code
-    </a>
-    <a className="block resume" href="/#!/resume">
+    </Link>
+    <Link className="block" to="/resume">
       <i className="material-icons">assignment_ind</i>
       Resume
-    </a>
-    <a className="block links" href="/#!/links">
+    </Link>
+    <Link className="block" to="/links">
       <i className="material-icons">launch</i>
       Links
-    </a>
-    <a className="block achievements" href="/#!/achievements">
+    </Link>
+    <Link className="block wide" to="/achievements">
       <i className="material-icons">stars</i>
       Achievements
-    </a>
+    </Link>
   </div>
 );
 
