@@ -1,0 +1,73 @@
+#sidebar {
+    background: $white;
+    height: 100vh;
+    transition: 0.5s;
+
+    &:hover {
+        label {
+            opacity: 1;
+        }
+    }
+
+    #logo {
+        a {
+            padding-top: 1rem;
+            background: $green;
+            color: $black;
+
+            &:hover {
+                background: $black;
+                color: $green;
+
+                path:last-child {
+                    fill: $green;
+                }
+            }
+        }
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        max-width: 5rem;
+
+        li {
+            padding: 0;
+            margin: 0;
+
+            a {
+                padding: 0.75rem 0.7rem 0.5rem 0.7rem;
+                color: $black;
+                display: block;
+                text-align: center;
+                word-wrap: wrap;
+
+                &.sec {
+                    background: $bg-hl;
+                }
+
+                &:hover,
+                &.active {
+                    background: $black;
+                    color: $bg;
+                }
+
+                i {
+                    font-size: 1.75rem;
+                    display: block;
+                }
+
+                label {
+                    display: block;
+                    font-size: 0.9rem;
+                    margin-top: -0.1rem;
+                    transition: 0.2s;
+                    opacity: 0;
+                    font-weight: 300;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
