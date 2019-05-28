@@ -45,8 +45,25 @@
             word-wrap: wrap;
             text-decoration: none;
 
-            &.sec {
-                background: $bg-hl;
+            &[href="/"] {
+                background: $green;
+                svg {
+                    path[fill="#000"] {
+                        fill: $black;
+                    }
+                }
+
+                &:hover,
+                &.active {
+                    background: $black;
+                    color: $green;
+
+                    svg {
+                        path[fill="#000"] {
+                            fill: $green;
+                        }
+                    }
+                }
             }
 
             &:hover,
