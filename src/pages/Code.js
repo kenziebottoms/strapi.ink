@@ -1,13 +1,12 @@
 import React from 'react';
 
+import Page from '../components/Page';
 import TileGrid from '../components/TileGrid';
-import Copyright from '../elements/Copyright';
 
-const Art = () => (
-  <React.Fragment>
-    <TileGrid id="art" dataSource="code" />
-    <Copyright />
-  </React.Fragment>
+const Code = () => (
+  <Page id="code">
+    <TileGrid dataSource="code" />
+  </Page>
 );
 
-export default Art;
+export default Code;

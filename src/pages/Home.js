@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import Page from '../components/Page';
+
 import '../styles/pages/Home.scss';
 
-import Copyright from '../elements/Copyright';
-
 const Home = () => (
-  <div id="home">
+  <Page id="home">
     <div id="bio" className="block wide">
       <p>
         Kenzie Bottoms is a feminist, artist, and developer born and raised in
@@ -56,8 +56,7 @@ const Home = () => (
       <i className="material-icons">stars</i>
       Achievements
     </Link>
-    <Copyright />
-  </div>
+  </Page>
 );
 
 export default Home;

@@ -1,13 +1,12 @@
 import React from 'react';
 
+import Page from '../components/Page';
 import TileGrid from '../components/TileGrid';
-import Copyright from '../elements/Copyright';
 
 const Art = () => (
-  <React.Fragment>
-    <TileGrid id="art" dataSource="artsy" />
-    <Copyright />
-  </React.Fragment>
+  <Page id="art">
+    <TileGrid dataSource="artsy" />
+  </Page>
 );
 
 export default Art;

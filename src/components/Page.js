@@ -1,0 +1,12 @@
+import React from 'react';
+
+import Copyright from '../elements/Copyright';
+
+const Page = props => (
+  <div id={props.id}>
+    {props.children}
+    <Copyright />
+  </div>
+);
+
+export default Page;
