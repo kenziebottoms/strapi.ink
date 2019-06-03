@@ -5,20 +5,12 @@
     display: grid;
     grid-gap: 1rem;
 
-    @media (min-width: $xs-sm) {
-        .post .overlay {
-            padding: 2rem 1rem;
-        }
-    }
-
     @media (min-width: $sm-md) {
         grid-template-columns: repeat(2, 1fr);
     }
-
     @media (min-width: $md-lg) {
         grid-template-columns: repeat(3, 1fr);
     }
-
     @media (min-width: $lg-xl) {
         grid-template-columns: repeat(4, 1fr);
     }
