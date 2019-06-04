@@ -1,5 +1,4 @@
 import RESTDB from '../keys';
-import { classBody } from '@babel/types';
 
 const allArtPosts = () =>
   fetch(`${RESTDB.url}/artsy?apikey=${RESTDB.key}`).then(response =>

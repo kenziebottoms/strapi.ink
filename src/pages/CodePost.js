@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import Page from '../components/Page';
 import LoadingIcon from '../elements/LoadingIcon';
+import DateTag from '../elements/DateTag';
 
 import '../styles/pages/Post.scss';
 
@@ -15,12 +16,6 @@ class CodePost extends React.Component {
       post: null,
       loading: true,
     };
-  }
-
-  formatDate(epochString) {
-    let date = new Date(epochString * 1000).toString();
-    let [_, month, dayOfMonth, year] = date.split(' ');
-    return `${month} ${dayOfMonth}, ${year}`;
   }
 
   componentDidMount() {
@@ -40,10 +35,13 @@ class CodePost extends React.Component {
         </Link>
         {this.state.post && (
           <React.Fragment>
-            <img src={this.state.post.image} alt={this.state.post.title} />
+            {this.state.post.script && <script src={this.state.post.script} />}
+            {!this.state.post.script && (
+              <img src={this.state.post.image} alt={this.state.post.title} />
+            )}
             <div className="caption">
               <h3>{this.state.post.title}</h3>
-              <p className="date">{this.formatDate(this.state.post.date)}</p>
+              <DateTag date={this.state.post.date} />
               <p dangerouslySetInnerHTML={{ __html: this.state.post.body }} />
             </div>
           </React.Fragment>
