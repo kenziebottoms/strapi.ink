@@ -5,6 +5,7 @@ import '../styles/components/Content.scss';
 
 import Home from '../pages/Home';
 import Art from '../pages/Art';
+import ArtPost from '../pages/ArtPost';
 import Code from '../pages/Code';
 import Resume from '../pages/Resume';
 
@@ -15,6 +16,7 @@ class Content extends React.Component {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/art" component={Art} />
+          <Route path="/art" component={ArtPost} />
           <Route exact path="/code" component={Code} />
           <Route path="/resume" component={Resume} />
         </Switch>

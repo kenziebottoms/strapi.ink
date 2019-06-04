@@ -28,7 +28,7 @@ const Tile = props => (
     key={props.post._id}
     style={{ backgroundImage: `url(${props.post.thumbnail})` }}
   >
-    <Link to={`/art/${props.post._id}`}>
+    <Link to={props.linkHead + '/' + props.post._id}>
       <div className="overlay">
         <h3>{props.post.title}</h3>
         <div className="date">{formatDate(props.post.date * 1000)}</div>

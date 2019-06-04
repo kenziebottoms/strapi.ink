@@ -5,8 +5,6 @@ import LoadingIcon from '../elements/LoadingIcon';
 
 import '../styles/components/TileGrid.scss';
 
-import RESTDB from '../keys';
-
 class TileGrid extends React.Component {
   constructor(props) {
     super(props);
@@ -17,22 +15,16 @@ class TileGrid extends React.Component {
   }
 
   componentDidMount() {
-    fetch(
-      `${RESTDB.url}/${this.props.dataSource}?apikey=${
-        RESTDB.key
-      }&sort=date&dir=-1`
-    )
-      .then(response => response.json())
-      .then(json => {
-        this.setState({ posts: json, loading: false });
-      });
+    this.props.dataSource.then(json => {
+      this.setState({ posts: json, loading: false });
+    });
   }
 
   render() {
     return (
       <div id={this.props.id} className="tileGrid">
         {this.state.posts.map(post => (
-          <Tile key={post._id} post={post} />
+          <Tile key={post._id} post={post} linkHead={this.props.linkHead} />
         ))}
         <LoadingIcon active={this.state.loading} />
       </div>

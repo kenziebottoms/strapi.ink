@@ -1,0 +1,23 @@
+import RESTDB from '../keys';
+
+const allArtPosts = () =>
+  fetch(`${RESTDB.url}/artsy?apikey=${RESTDB.key}`).then(response =>
+    response.json()
+  );
+
+const allCodePosts = () =>
+  fetch(`${RESTDB.url}/code?apikey=${RESTDB.key}&sort=date&dir=-1`).then(
+    response => response.json()
+  );
+
+const artPost = id =>
+  fetch(`${RESTDB.url}/artsy/${id}?apikey=${RESTDB.key}`).then(response =>
+    response.json()
+  );
+
+const codePost = id =>
+  fetch(`${RESTDB.url}/code/${id}?apikey=${RESTDB.key}`).then(response =>
+    response.json()
+  );
+
+export default { allArtPosts, allCodePosts, artPost, codePost };
