@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 
 import Logo from '../elements/Logo';
 
@@ -46,7 +46,16 @@ class Sidebar extends React.Component {
       <ul id="sidebar">
         {this.routes().map(route => (
           <li key={route.name}>
-            <Link to={route.path}>
+            <Link
+              to={route.path}
+              className={
+                (route.icon &&
+                  this.props.location.pathname.indexOf(route.path) >= 0) ||
+                (!route.icon && this.props.location.pathname === '/')
+                  ? 'active'
+                  : ''
+              }
+            >
               {route.icon ? (
                 <i className="material-icons">{route.icon}</i>
               ) : (
@@ -60,4 +69,4 @@ class Sidebar extends React.Component {
     );
   }
 }
-export default Sidebar;
+export default withRouter(Sidebar);
