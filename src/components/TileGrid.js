@@ -16,6 +16,8 @@ class TileGrid extends React.Component {
 
   componentDidMount() {
     this.props.dataSource.then(json => {
+      console.log('loadign false');
+      console.log(json);
       this.setState({ posts: json, loading: false });
     });
   }
@@ -23,6 +25,7 @@ class TileGrid extends React.Component {
   render() {
     return (
       <div id={this.props.id} className="tileGrid">
+        {this.state.loading}
         {this.state.posts.map(post => (
           <Tile key={post._id} post={post} linkHead={this.props.linkHead} />
         ))}
