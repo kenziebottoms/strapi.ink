@@ -27,8 +27,6 @@ class CodePost extends React.Component {
     restDB
       .codePost(this.props.location.pathname.split('/code/')[1])
       .then(json => {
-        // make all links open in new tabs
-        json.body = json.body.replace('<a ', "<a target='_blank' ");
         this.setState({ post: json, loading: false });
       });
   }
@@ -43,9 +41,11 @@ class CodePost extends React.Component {
         {this.state.post && (
           <React.Fragment>
             <img src={this.state.post.image} alt={this.state.post.title} />
-            <h3>{this.state.post.title}</h3>
-            <p className="date">{this.formatDate(this.state.post.date)}</p>
-            <p dangerouslySetInnerHTML={{ __html: this.state.post.body }} />
+            <div className="caption">
+              <h3>{this.state.post.title}</h3>
+              <p className="date">{this.formatDate(this.state.post.date)}</p>
+              <p dangerouslySetInnerHTML={{ __html: this.state.post.body }} />
+            </div>
           </React.Fragment>
         )}
         <LoadingIcon active={this.state.loading} />
