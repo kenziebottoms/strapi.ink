@@ -10,6 +10,7 @@ import Code from '../pages/Code';
 import CodePost from '../pages/CodePost';
 import Resume from '../pages/Resume';
 import Achievements from '../pages/Achievements';
+import Links from '../pages/Links';
 
 class Content extends React.Component {
   render() {
@@ -23,6 +24,7 @@ class Content extends React.Component {
           <Route path="/code" component={CodePost} />
           <Route path="/resume" component={Resume} />
           <Route path="/achievements" component={Achievements} />
+          <Route path="/links" component={Links} />
         </Switch>
       </section>
     );

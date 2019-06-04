@@ -104,7 +104,7 @@ const feats = [
   {
     title: 'Shrug Emoji',
     icon: 'tag_faces',
-    description: 'Create 10 slack emojis.',
+    description: 'Create 10 Slack emojis.',
   },
 ];
 
