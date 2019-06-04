@@ -6,19 +6,15 @@ const CodePen = props => (
   <React.Fragment>
     <div
       className="codepen"
-      data-height="265"
       data-theme-id="dark"
       data-default-tab="result"
       data-user="kenziebottoms"
       data-slug-hash={props.hash}
       style={{
-        height: '265px',
         boxSizing: 'border-box',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        border: '2px solid',
-        margin: '1em 0',
         padding: '1em',
       }}
     >
