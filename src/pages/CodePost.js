@@ -3,13 +3,12 @@ import { Link } from 'react-router-dom';
 
 import Page from '../components/Page';
 import LoadingIcon from '../elements/LoadingIcon';
-import DateTag from '../elements/DateTag';
 
 import '../styles/pages/Post.scss';
 
 import restDB from '../services/restDB';
 
-class ArtPost extends React.Component {
+class CodePost extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -18,9 +17,15 @@ class ArtPost extends React.Component {
     };
   }
 
+  formatDate(epochString) {
+    let date = new Date(epochString * 1000).toString();
+    let [_, month, dayOfMonth, year] = date.split(' ');
+    return `${month} ${dayOfMonth}, ${year}`;
+  }
+
   componentDidMount() {
     restDB
-      .artPost(this.props.location.pathname.split('/art/')[1])
+      .codePost(this.props.location.pathname.split('/code/')[1])
       .then(json => {
         // make all links open in new tabs
         json.body = json.body.replace('<a ', "<a target='_blank' ");
@@ -30,19 +35,17 @@ class ArtPost extends React.Component {
 
   render() {
     return (
-      <Page id="post" className="art">
-        <Link className="back" to="/art">
+      <Page id="post" className="code">
+        <Link className="back" to="/code">
           <i className="material-icons">chevron_left</i>
-          Back to art
+          Back to code
         </Link>
         {this.state.post && (
           <React.Fragment>
             <img src={this.state.post.image} alt={this.state.post.title} />
-            <div className="caption">
-              <h3>{this.state.post.title}</h3>
-              <DateTag date={this.state.post.date} />
-              <p dangerouslySetInnerHTML={{ __html: this.state.post.body }} />
-            </div>
+            <h3>{this.state.post.title}</h3>
+            <p className="date">{this.formatDate(this.state.post.date)}</p>
+            <p dangerouslySetInnerHTML={{ __html: this.state.post.body }} />
           </React.Fragment>
         )}
         <LoadingIcon active={this.state.loading} />
@@ -51,4 +54,4 @@ class ArtPost extends React.Component {
   }
 }
 
-export default ArtPost;
+export default CodePost;

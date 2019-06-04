@@ -1,0 +1,58 @@
+@import '../colors';
+@import '../breakpoints';
+
+#post {
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    grid-gap: 1rem;
+    display: grid;
+    @media (min-width: $sm-md) {
+        height: 100%;
+    }
+    &.art {
+        > * {
+            justify-self: center;
+            align-self: center;
+        }
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto auto;
+        @media (min-width: $sm-md) {
+            grid-template-columns: auto 40%;
+            grid-template-rows: auto 1fr auto;
+            img {
+                justify-self: center;
+            }
+        }
+        @media (min-width: $md-lg) {
+            grid-template-columns: auto 50%;
+            grid-template-rows: auto 1fr auto;
+            img {
+                justify-self: center;
+            }
+        }
+        .caption {
+            display: flex;
+            flex-direction: column;
+            * {
+                margin: 0 0 0.5rem 0;
+            }
+        }
+    }
+    .back {
+        grid-column: 1 / -1;
+        justify-self: left;
+        text-align: left;
+        display: block;
+        .material-icons {
+            vertical-align: sub;
+        }
+    }
+    .date {
+        color: $gray;
+    }
+    #copyright {
+        margin: 0;
+    }
+}

@@ -7,6 +7,7 @@ import Home from '../pages/Home';
 import Art from '../pages/Art';
 import ArtPost from '../pages/ArtPost';
 import Code from '../pages/Code';
+import CodePost from '../pages/CodePost';
 import Resume from '../pages/Resume';
 
 class Content extends React.Component {
@@ -18,6 +19,7 @@ class Content extends React.Component {
           <Route exact path="/art" component={Art} />
           <Route path="/art" component={ArtPost} />
           <Route exact path="/code" component={Code} />
+          <Route path="/code" component={CodePost} />
           <Route path="/resume" component={Resume} />
         </Switch>
       </section>
