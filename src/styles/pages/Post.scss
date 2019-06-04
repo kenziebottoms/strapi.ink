@@ -33,6 +33,20 @@
             justify-self: center;
         }
     }
+
+    &.code {
+        .cp_embed_wrapper {
+            align-self: stretch;
+            justify-self: stretch;
+            iframe {
+                height: 100%;
+            }
+        }
+        .script {
+            display: none;
+        }
+    }
+
     .caption {
         text-align: left;
         display: flex;

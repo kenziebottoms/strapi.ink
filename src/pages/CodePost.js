@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import Page from '../components/Page';
 import LoadingIcon from '../elements/LoadingIcon';
 import DateTag from '../elements/DateTag';
+import CodePen from '../components/CodePen';
+import Script from '../elements/Script';
 
 import '../styles/pages/Post.scss';
 
@@ -35,9 +37,22 @@ class CodePost extends React.Component {
         </Link>
         {this.state.post && (
           <React.Fragment>
-            {this.state.post.script && <script src={this.state.post.script} />}
-            {!this.state.post.script && (
-              <img src={this.state.post.image} alt={this.state.post.title} />
+            {this.state.post.codepen ? (
+              <CodePen
+                title={this.state.post.title}
+                hash={this.state.post.codepen}
+              />
+            ) : (
+              <React.Fragment>
+                {this.state.post.script ? (
+                  <Script async={true} src={this.state.post.script} />
+                ) : (
+                  <img
+                    src={this.state.post.image}
+                    alt={this.state.post.title + ' '}
+                  />
+                )}
+              </React.Fragment>
             )}
             <div className="caption">
               <h3>{this.state.post.title}</h3>
