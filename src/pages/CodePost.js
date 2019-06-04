@@ -7,6 +7,8 @@ import DateTag from '../elements/DateTag';
 import CodePen from '../components/CodePen';
 import Script from '../elements/Script';
 
+import githubLogo from '../img/github.svg';
+
 import '../styles/pages/Post.scss';
 
 import restDB from '../services/restDB';
@@ -57,7 +59,26 @@ class CodePost extends React.Component {
             <div className="caption">
               <h3>{this.state.post.title}</h3>
               <DateTag date={this.state.post.date} />
-              <p dangerouslySetInnerHTML={{ __html: this.state.post.body }} />
+              <p
+                className="body"
+                dangerouslySetInnerHTML={{ __html: this.state.post.body }}
+              />
+              {this.state.post.link && (
+                <p className="link">
+                  <i class="material-icons">link</i>
+                  <a href={this.state.post.link} target="blank">
+                    {this.state.post.link}
+                  </a>
+                </p>
+              )}
+              {this.state.post.github && (
+                <p className="github">
+                  <img src={githubLogo} alt="GitHub" />
+                  <a href={this.state.post.github} target="blank">
+                    {this.state.post.github}
+                  </a>
+                </p>
+              )}
             </div>
           </React.Fragment>
         )}
