@@ -112,7 +112,11 @@ const Achievements = () => (
   <Page id="achievements">
     <h1>Achievements</h1>
     {feats.map(feat => (
-      <Feat name={feat.name} description={feat.description} icon={feat.icon} />
+      <Feat
+        title={feat.title}
+        description={feat.description}
+        icon={feat.icon}
+      />
     ))}
   </Page>
 );
