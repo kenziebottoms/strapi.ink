@@ -72,7 +72,7 @@ const Links = () => (
   <Page id="links">
     {links.map(link => (
       <a href={link.href} target="blank" key={link.name} className="block">
-        <img src={link.image} />
+        <img src={link.image} alt={link.name} />
         {link.name}
       </a>
     ))}

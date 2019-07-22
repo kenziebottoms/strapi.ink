@@ -6,6 +6,7 @@ import '../styles/components/Content.scss';
 import Home from '../pages/Home';
 import Art from '../pages/Art';
 import ArtPost from '../pages/ArtPost';
+import Pronouns from '../pages/Pronouns';
 import Code from '../pages/Code';
 import CodePost from '../pages/CodePost';
 import Resume from '../pages/Resume';
@@ -25,6 +26,7 @@ class Content extends React.Component {
           <Route path="/resume" component={Resume} />
           <Route path="/achievements" component={Achievements} />
           <Route path="/links" component={Links} />
+          <Route path="/pronouns" component={Pronouns} />
         </Switch>
       </section>
     );

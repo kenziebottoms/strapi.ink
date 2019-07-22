@@ -21,6 +21,17 @@ body {
     }
 }
 
+blockquote {
+    background: rgba($green, 0.15);
+    padding: 1rem;
+    font-weight: 300;
+    font-size: 1.3rem;
+    border-left: 1rem rgba($green, 0.5) solid;
+    margin: 0;
+    line-height: 1.45;
+    padding-left: 1rem;
+}
+
 .material-icons {
     vertical-align: sub;
 }
@@ -37,6 +48,13 @@ img {
     height: 100vh;
     width: 100%;
     color: $black;
+}
+
+.blog {
+    .block {
+        max-width: 40rem;
+        margin: auto;
+    }
 }
 
 .block {
@@ -60,4 +78,8 @@ h1 {
     font-weight: 100;
     text-align: center;
     text-transform: lowercase;
+}
+
+strong {
+    font-weight: 700;
 }
