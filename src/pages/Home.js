@@ -11,9 +11,9 @@ const Home = () => (
       <p>
         Kenzie Bottoms is a feminist, artist, and developer born and raised in
         Nashville.{' '}
-        <a href="https://en.wikipedia.org/wiki/Singular_they" target="blank">
+        <Link to="/pronouns">
           They
-        </a>{' '}
+        </Link>{' '}
         are always open to new opportunities, technical or creative (or better
         yet, both), and their default mindset, for better or worse, is usually,
         "Challenge accepted." They skate with{' '}
