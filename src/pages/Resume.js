@@ -9,8 +9,9 @@ const Resume = () => (
     <div id="green-border" />
     <h1 className="lane-1">Full-time</h1>
     <h1 className="lane-2">Freelance</h1>
+    <div className="year">2020</div>
     <Job
-      classes="lane-1 length-2"
+      classes="lane-1 length-3"
       company="FortyAU"
       jobTitle="Software Developer"
       startDate="July 2018"
@@ -21,13 +22,14 @@ const Resume = () => (
         'Implementation, maintenance, repair, and modification of responsive custom WordPress themes.',
         'Responsive map features using Leaflet with React.',
         'AWS S3 file storage and SendGrid email notification integration with an Elixir Phoenix app.',
+        'Organization and implementation of an API-driven administrative React app.',
       ]}
       tech={[
         'Git',
-        'Vue',
         'React',
-        'Java',
+        'Vue',
         'WordPress',
+        'Java',
         'Elixir & Phoenix',
         'JavaScript',
         'Leaflet',

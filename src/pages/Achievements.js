@@ -7,16 +7,6 @@ import '../styles/pages/Achievements.scss';
 
 const feats = [
   {
-    title: 'Bulletproof',
-    icon: 'security',
-    description: 'Write 100% test coverage for a unit of code.',
-  },
-  {
-    title: 'Finders Keepers',
-    icon: 'healing',
-    description: 'Find a bug by writing automated tests.',
-  },
-  {
     title: 'Voila',
     icon: 'cast',
     description: 'Demo a feature you built for a client.',
@@ -58,6 +48,16 @@ const feats = [
     title: 'Color Coded',
     icon: 'brush',
     description: 'Write your own color theme for a text editor.',
+  },
+  {
+    title: 'Bulletproof',
+    icon: 'security',
+    description: 'Write 100% test coverage for a unit of code.',
+  },
+  {
+    title: 'Finders Keepers',
+    icon: 'healing',
+    description: 'Find a bug by writing automated tests.',
   },
   {
     title: 'Goodwill Hunting',
