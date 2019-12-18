@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 
 import Tile from './Tile';
 import LoadingIcon from '../elements/LoadingIcon';
@@ -23,11 +23,16 @@ class TileGrid extends React.Component {
   render() {
     return (
       <div id={this.props.id} className="tileGrid">
-        {this.state.loading}
-        {this.state.posts.map(post => (
-          <Tile key={post._id} post={post} linkHead={this.props.linkHead} />
-        ))}
-        <LoadingIcon active={this.state.loading} />
+        {this.state.loading ? (
+          <LoadingIcon active={this.state.loading} />
+        ) : (
+          <Fragment>
+            {this.props.children}
+            {this.state.posts.map(post => (
+              <Tile key={post._id} post={post} linkHead={this.props.linkHead} />
+            ))}
+          </Fragment>
+        )}
       </div>
     );
   }

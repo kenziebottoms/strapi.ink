@@ -35,7 +35,9 @@ class ArtPost extends React.Component {
           <i className="material-icons">chevron_left</i>
           Back to art
         </Link>
-        {this.state.post && (
+        {this.state.loading ? (
+          <LoadingIcon active={this.state.loading} />
+        ) : (
           <React.Fragment>
             <img src={this.state.post.image} alt={this.state.post.title} />
             <div className="caption">
@@ -45,7 +47,6 @@ class ArtPost extends React.Component {
             </div>
           </React.Fragment>
         )}
-        <LoadingIcon active={this.state.loading} />
       </Page>
     );
   }

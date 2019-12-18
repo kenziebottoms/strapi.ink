@@ -1,4 +1,5 @@
 @import '../breakpoints';
+@import '../colors';
 
 .tileGrid {
     width: 100%;
@@ -13,6 +14,22 @@
     }
     @media (min-width: $lg-xl) {
         grid-template-columns: repeat(4, 1fr);
+    }
+    blockquote.commissions {
+        font-size: 1.15rem;
+        background: $white;
+        align-self: stretch;
+        margin: 0;
+        @media (min-width: $sm-md) {
+            grid-column: 1 / -1;
+        }
+        @media (min-width: $lg-xl) {
+            grid-column: 2 / span 2;
+            grid-row: 2;
+        }
+        strong {
+            font-weight: 500;
+        }
     }
 
     #copyright {
