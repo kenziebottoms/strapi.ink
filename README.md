@@ -11,11 +11,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 git checkout dev
 npm run deploy
 git checkout gh-pages
-```
-
-Move everything in the `build` folder to the root; overwrite if necessary.
-
-```bash
+cp -r build/* .
+rm -rf build
 git checkout dev CNAME
 git branch -D master
 git checkout -b master
