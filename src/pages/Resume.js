@@ -9,37 +9,36 @@ const Resume = () => (
     <div id="green-border" />
     <h1 className="lane-1">Full-time</h1>
     <h1 className="lane-2">Freelance</h1>
-    <div className="year">2020</div>
     <Job
-      classes="lane-1 length-3"
+      classes="lane-1 length-4"
       company="FortyAU"
       jobTitle="Software Developer"
       startDate="July 2018"
       description={[
+        'Dynamic single-page React app built on a Node.js API, featuring sortable dynamic data tables and form-driven data input.',
+        'Dynamic single-page Vue.js app built on an Elixir/Phoenix API.',
+        'Responsive, interactive custom WordPress themes using jQuery, Bootstrap, and SCSS, featuring secondary custom user dashboard functionality.',
+        'Interactive, filterable map views on an Elixir/Phoenix app using Leaflet and React.',
+        'AWS S3 file storage and SendGrid email integration with an Elixir/Phoenix app.',
         'Automated testing, QA processes, and bug fixes for large legacy Java codebase.',
-        'Creation, enhancement, and refactoring of features on a Vue app.',
-        'Responsive styling and UI enhancements on a Vue app using SCSS.',
-        'Implementation, maintenance, repair, and modification of responsive custom WordPress themes.',
-        'Responsive map features using Leaflet with React.',
-        'AWS S3 file storage and SendGrid email notification integration with an Elixir Phoenix app.',
-        'Organization and implementation of an API-driven administrative React app.',
       ]}
       tech={[
         'Git',
         'React',
         'Vue',
         'WordPress',
-        'Java',
         'Elixir & Phoenix',
         'JavaScript',
         'Leaflet',
         'AWS S3',
         'SendGrid',
         'CSS/SCSS',
+        'Java',
         'JUnit',
-        'Spring Boot',
       ]}
     />
+    <div className="year">2020</div>
+    <div className="placeholder" />
     <div className="year">2019</div>
     <Job
       classes="align-self-end lane-2 length-1"
