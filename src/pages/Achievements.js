@@ -7,30 +7,17 @@ import '../styles/pages/Achievements.scss';
 
 const feats = [
   {
-    title: 'Voila',
-    icon: 'cast',
-    description: 'Demo a feature you built for a client.',
-  },
-  {
-    title: 'It\'s Pronounced "Oiler"',
-    icon: 'functions',
+    title: 'MVJ',
+    icon: 'military_tech',
     description: [
-      'Solve 25 problems on ',
-      <a href="https://projecteuler.net/about" target="blank">
-        Project Euler
+      'Be awarded Most Valuable ',
+      <a
+        href="https://en.wikipedia.org/wiki/Roller_derby#Basics_of_play"
+        target="blank"
+      >
+        Jammer
       </a>,
-      '.',
-    ],
-  },
-  {
-    title: 'Jam On',
-    icon: 'stars',
-    description: [
-      'Score 20 points in ',
-      <a href="https://en.wikipedia.org/wiki/Roller_derby#Jams" target="blank">
-        one jam
-      </a>,
-      '.',
+      ' in two derby bouts.',
     ],
   },
   {
@@ -55,6 +42,17 @@ const feats = [
     description: 'Write 100% test coverage for a unit of code.',
   },
   {
+    title: 'Jam On',
+    icon: 'stars',
+    description: [
+      'Score 20 points in ',
+      <a href="https://en.wikipedia.org/wiki/Roller_derby#Jams" target="blank">
+        one jam
+      </a>,
+      '.',
+    ],
+  },
+  {
     title: 'Finders Keepers',
     icon: 'healing',
     description: 'Find a bug by writing automated tests.',
@@ -66,6 +64,22 @@ const feats = [
       'Earn 5000 points in the ',
       <a target="blank" href="https://www.gish.com/">
         Greatest International Scavenger Hunt
+      </a>,
+      '.',
+    ],
+  },
+  {
+    title: 'Voila',
+    icon: 'cast',
+    description: 'Demo a feature you built for a client.',
+  },
+  {
+    title: 'It\'s Pronounced "Oiler"',
+    icon: 'functions',
+    description: [
+      'Solve 25 problems on ',
+      <a href="https://projecteuler.net/about" target="blank">
+        Project Euler
       </a>,
       '.',
     ],
@@ -89,29 +103,29 @@ const feats = [
   {
     title: 'Mother May I?',
     icon: 'merge_type',
-    description: 'Write 50 pull requests.',
+    description: 'Write 100 pull requests.',
   },
   {
     title: 'Buckle Up',
     icon: 'send',
-    description: 'Merge 20 branches into master.',
+    description: 'Merge 100 branches into master.',
   },
   {
     title: 'Pushover',
     icon: 'assignment_turned_in',
-    description: 'Approve 20 pull requests.',
+    description: 'Approve 50 pull requests.',
   },
   {
     title: 'Shrug Emoji',
     icon: 'tag_faces',
-    description: 'Create 10 Slack emojis.',
+    description: 'Create 30 Slack emojis.',
   },
 ];
 
 const Achievements = () => (
   <Page id="achievements">
     <h1>Achievements</h1>
-    {feats.map(feat => (
+    {feats.map((feat) => (
       <Feat
         title={feat.title}
         description={feat.description}

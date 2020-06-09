@@ -10,10 +10,10 @@ const Home = () => (
     <div id="bio" className="block wide">
       <p>
         Kenzie Bottoms is a feminist, artist, and developer born and raised in
-        Nashville. <Link to="/pronouns">They</Link> are always open to new
-        opportunities, technical or creative (or better yet, both), and their
-        default mindset, for better or worse, is usually, "Challenge accepted."
-        They skate with the{' '}
+        Nashville. <Link to="/pronouns">They</Link> are passionate about making
+        every space, professional and otherwise, safe for women and nonbinary
+        people, people of color, trans people, disabled people, and
+        neurodivergent people. They skate with the{' '}
         <a href="https://www.nashvillerollerderby.com/" target="blank">
           Nashville Roller Derby
         </a>{' '}
