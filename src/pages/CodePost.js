@@ -25,7 +25,7 @@ class CodePost extends React.Component {
   componentDidMount() {
     restDB
       .codePost(this.props.location.pathname.split('/code/')[1])
-      .then(json => {
+      .then((json) => {
         this.setState({ post: json, loading: false });
       });
   }
@@ -37,7 +37,9 @@ class CodePost extends React.Component {
           <i className="material-icons">chevron_left</i>
           Back to code
         </Link>
-        {this.state.post && (
+        {this.state.loading ? (
+          <LoadingIcon active={this.state.loading} />
+        ) : (
           <React.Fragment>
             {this.state.post.codepen ? (
               <CodePen
@@ -82,7 +84,6 @@ class CodePost extends React.Component {
             </div>
           </React.Fragment>
         )}
-        <LoadingIcon active={this.state.loading} />
       </Page>
     );
   }
