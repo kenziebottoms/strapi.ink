@@ -1,7 +1,7 @@
-![](https://img.shields.io/badge/updated-3/24/20-green.svg)
+![](https://img.shields.io/badge/updated-7/15/20-green.svg)
 ![](https://img.shields.io/badge/react-v16.13.1-61DAFB.svg)
-![](https://img.shields.io/badge/npm-v6.4.1-C12026.svg)
-![](https://img.shields.io/badge/node-v10.15.3-006E00.svg)
+![](https://img.shields.io/badge/npm-v6.14.6-C12026.svg)
+![](https://img.shields.io/badge/node-v12.18.2-006E00.svg)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and then shaved down for Kenzie's personal use. It got rid of the service worker, the CSS, and the test class.
 
