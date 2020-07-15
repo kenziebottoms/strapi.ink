@@ -25,10 +25,10 @@ const Home = () => (
         <a href="http://nashvillesoftwareschool.com/" target="blank">
           Nashville Software School
         </a>{' '}
-        graduate, and they are currently routinely jumping into the deep end
-        with{' '}
-        <a href="https://fortyau.com/" target="blank">
-          FortyAU
+        graduate, and they are currently building onto and testing a legacy
+        React codebase with{' '}
+        <a href="https://www.celerocommerce.com/" target="blank">
+          Celero Commerce
         </a>
         .
       </p>
