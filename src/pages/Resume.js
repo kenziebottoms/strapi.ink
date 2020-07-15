@@ -10,10 +10,22 @@ const Resume = () => (
     <h1 className="lane-1">Full-time</h1>
     <h1 className="lane-2">Freelance</h1>
     <Job
+      classes="lane-1 length-1"
+      company="Celero Commerce"
+      jobTitle="React Developer"
+      startDate="June 2020"
+      description={[
+        'Automated testing for a large legacy codebase.',
+        'Documentation for a large legacy codebase.',
+      ]}
+      tech={['Git', 'React', 'Jest', 'Webpack', 'CSS/SCSS', 'Azure DevOps']}
+    />
+    <Job
       classes="lane-1 length-4"
       company="FortyAU"
       jobTitle="Software Developer"
       startDate="July 2018"
+      endDate="June 2020"
       description={[
         'Dynamic single-page React app built on a Node.js API, featuring sortable dynamic data tables and form-driven data input.',
         'Dynamic single-page Vue.js app built on an Elixir/Phoenix API.',
@@ -29,6 +41,7 @@ const Resume = () => (
         'WordPress',
         'Elixir & Phoenix',
         'JavaScript',
+        'Webpack',
         'Leaflet',
         'AWS S3',
         'SendGrid',
