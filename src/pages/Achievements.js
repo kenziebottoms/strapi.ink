@@ -13,8 +13,8 @@ const feats = [
       'Be awarded Most Valuable ',
       <a
         key={1}
-        href="https://en.wikipedia.org/wiki/Roller_derby#Basics_of_play"
-        target="blank"
+        href='https://en.wikipedia.org/wiki/Roller_derby#Basics_of_play'
+        target='blank'
       >
         Jammer
       </a>,
@@ -27,8 +27,9 @@ const feats = [
     description: [
       'Beat ',
       <a
-        key={1} href="https://nanowrimo.org/about"
-        target="blank">
+        key={1} href='https://nanowrimo.org/about'
+        target='blank'
+      >
         NaNoWriMo
       </a>,
       '.'
@@ -50,8 +51,9 @@ const feats = [
     description: [
       'Score 20 points in ',
       <a
-        key={1} href="https://en.wikipedia.org/wiki/Roller_derby#Jams"
-        target="blank">
+        key={1} href='https://en.wikipedia.org/wiki/Roller_derby#Jams'
+        target='blank'
+      >
         one jam
       </a>,
       '.'
@@ -68,8 +70,9 @@ const feats = [
     description: [
       'Earn 5000 points in the ',
       <a
-        key={1} target="blank"
-        href="https://www.gish.com/">
+        key={1} target='blank'
+        href='https://www.gish.com/'
+      >
         Greatest International Scavenger Hunt
       </a>,
       '.'
@@ -86,8 +89,9 @@ const feats = [
     description: [
       'Solve 25 problems on ',
       <a
-        key={1} href="https://projecteuler.net/about"
-        target="blank">
+        key={1} href='https://projecteuler.net/about'
+        target='blank'
+      >
         Project Euler
       </a>,
       '.'
@@ -104,8 +108,9 @@ const feats = [
     description: [
       'Write 20 aliases for ',
       <a
-        key={1} href="https://ohmyz.sh/"
-        target="blank">
+        key={1} href='https://ohmyz.sh/'
+        target='blank'
+      >
         Zsh
       </a>,
       '.'
@@ -134,7 +139,7 @@ const feats = [
 ]
 
 const Achievements = () => 
-  <Page id="achievements">
+  <Page id='achievements'>
     <h1>Achievements</h1>
     {feats.map((feat, i) => 
       <Feat

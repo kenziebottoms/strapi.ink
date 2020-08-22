@@ -22,7 +22,7 @@ class TileGrid extends React.Component {
 
   render() {
     return (
-      <div id={this.props.id} className="tileGrid">
+      <div id={this.props.id} className='tileGrid'>
         {this.state.loading ? 
           <LoadingIcon active={this.state.loading} />
           : 
@@ -31,7 +31,8 @@ class TileGrid extends React.Component {
             {this.state.posts.map(post => 
               <Tile
                 key={post._id} post={post}
-                linkHead={this.props.linkHead} />
+                linkHead={this.props.linkHead}
+              />
             )}
           </Fragment>
         }

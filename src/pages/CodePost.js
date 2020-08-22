@@ -32,9 +32,9 @@ class CodePost extends React.Component {
 
   render() {
     return (
-      <Page id="post" className="code">
-        <Link className="back" to="/code">
-          <i className="material-icons">chevron_left</i>
+      <Page id='post' className='code'>
+        <Link className='back' to='/code'>
+          <i className='material-icons'>chevron_left</i>
           Back to code
         </Link>
         {this.state.loading ? 
@@ -58,25 +58,25 @@ class CodePost extends React.Component {
                 }
               </React.Fragment>
             }
-            <div className="caption">
+            <div className='caption'>
               <h3>{this.state.post.title}</h3>
               <DateTag date={this.state.post.date} />
               <p
-                className="body"
+                className='body'
                 dangerouslySetInnerHTML={{ __html: this.state.post.body }}
               />
               {this.state.post.link && 
-                <p className="link">
-                  <i className="material-icons">link</i>
-                  <a href={this.state.post.link} target="blank">
+                <p className='link'>
+                  <i className='material-icons'>link</i>
+                  <a href={this.state.post.link} target='blank'>
                     {this.state.post.link}
                   </a>
                 </p>
               }
               {this.state.post.github && 
-                <p className="github">
-                  <img src={githubLogo} alt="GitHub" />
-                  <a href={this.state.post.github} target="blank">
+                <p className='github'>
+                  <img src={githubLogo} alt='GitHub' />
+                  <a href={this.state.post.github} target='blank'>
                     {this.state.post.github}
                   </a>
                 </p>

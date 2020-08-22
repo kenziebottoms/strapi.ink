@@ -24,14 +24,14 @@ function formatDate(epoch) {
 
 const Tile = props => 
   <div
-    className="art tile"
+    className='art tile'
     key={props.post._id}
     style={{ backgroundImage: `url(${props.post.thumbnail})` }}
   >
     <Link to={props.linkHead + '/' + props.post._id}>
-      <div className="overlay">
+      <div className='overlay'>
         <h3>{props.post.title}</h3>
-        <div className="date">{formatDate(props.post.date * 1000)}</div>
+        <div className='date'>{formatDate(props.post.date * 1000)}</div>
       </div>
     </Link>
   </div>

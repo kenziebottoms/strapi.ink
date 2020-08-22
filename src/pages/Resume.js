@@ -7,15 +7,15 @@ import '../styles/pages/Resume.scss'
 /*eslint { 'max-len': 0 }*/
 
 const Resume = () => 
-  <Page id="resume">
-    <div id="green-border" />
-    <h1 className="lane-1">Full-time</h1>
-    <h1 className="lane-2">Freelance</h1>
+  <Page id='resume'>
+    <div id='green-border' />
+    <h1 className='lane-1'>Full-time</h1>
+    <h1 className='lane-2'>Freelance</h1>
     <Job
-      classes="lane-1 length-1"
-      company="Celero Commerce"
-      jobTitle="React Developer"
-      startDate="June 2020"
+      classes='lane-1 length-1'
+      company='Celero Commerce'
+      jobTitle='React Developer'
+      startDate='June 2020'
       description={[
         'Automated testing for a large legacy codebase.', 'Documentation for a large legacy codebase.'
       ]}
@@ -27,11 +27,11 @@ const Resume = () =>
         'Azure DevOps']}
     />
     <Job
-      classes="lane-1 length-4"
-      company="FortyAU"
-      jobTitle="Software Developer"
-      startDate="July 2018"
-      endDate="June 2020"
+      classes='lane-1 length-4'
+      company='FortyAU'
+      jobTitle='Software Developer'
+      startDate='July 2018'
+      endDate='June 2020'
       description={[
         'Dynamic single-page React app built on a Node.js API, featuring sortable dynamic data tables and form-driven data input.',
         'Dynamic single-page Vue.js app built on an Elixir/Phoenix API.',
@@ -56,21 +56,22 @@ const Resume = () =>
         'JUnit'
       ]}
     />
-    <div className="year">2020</div>
-    <div className="placeholder" />
-    <div className="year">2019</div>
+    <div className='year'>2020</div>
+    <div className='placeholder' />
+    <div className='year'>2019</div>
     <Job
-      classes="align-self-end lane-2 length-1"
-      company="MERGE Digital"
-      jobTitle="Freelance Developer"
-      startDate="July 2018"
-      endDate="August 2018"
+      classes='align-self-end lane-2 length-1'
+      company='MERGE Digital'
+      jobTitle='Freelance Developer'
+      startDate='July 2018'
+      endDate='August 2018'
       description={[
         [
           'Responsive custom WordPress themes built with ',
           <a
-            key={1} href="https://roots.io/"
-            target="blank">
+            key={1} href='https://roots.io/'
+            target='blank'
+          >
             Roots.io
           </a>,
           '.'
@@ -83,11 +84,11 @@ const Resume = () =>
         'PHP']}
     />
     <Job
-      classes="lane-1 length-1"
-      company="Nashville Software School"
-      jobTitle="Apprentice Software Developer"
-      startDate="November 2017"
-      endDate="May 2018"
+      classes='lane-1 length-1'
+      company='Nashville Software School'
+      jobTitle='Apprentice Software Developer'
+      startDate='November 2017'
+      endDate='May 2018'
       description={[
         'Source control and collaboration with Git & GitHub.',
         'Collaboration with GitHub projects and Trello using Agile/Scrum processes.',
@@ -112,11 +113,11 @@ const Resume = () =>
       ]}
     />
     <Job
-      classes="lane-2 align-self-center length-1"
-      company="Vantedge"
-      jobTitle="Freelance Developer"
-      startDate="January 2018"
-      endDate="August 2018"
+      classes='lane-2 align-self-center length-1'
+      company='Vantedge'
+      jobTitle='Freelance Developer'
+      startDate='January 2018'
+      endDate='August 2018'
       description={[
         'Design and implementation of custom archive pages.', 'Optimization, modification, and maintenance of a custom WordPress theme.'
       ]}
@@ -125,13 +126,13 @@ const Resume = () =>
         'WordPress',
         'PHP']}
     />
-    <div className="year">2018</div>
+    <div className='year'>2018</div>
     <Job
-      classes="lane-2 length-1"
-      company="IASIS Healthcare"
-      jobTitle="Freelance Developer"
-      startDate="June 2017"
-      endDate="September 2017"
+      classes='lane-2 length-1'
+      company='IASIS Healthcare'
+      jobTitle='Freelance Developer'
+      startDate='June 2017'
+      endDate='September 2017'
       description={[
         'Repair and optimization of existing WordPress sites.', 'Design and implementation of custom landing pages.'
       ]}
@@ -143,11 +144,11 @@ const Resume = () =>
     />
 
     <Job
-      classes="lane-1 length-2"
-      company="G/O Digital"
-      jobTitle="Web Development Maintenance Specialist"
-      startDate="September 2016"
-      endDate="April 2017"
+      classes='lane-1 length-2'
+      company='G/O Digital'
+      jobTitle='Web Development Maintenance Specialist'
+      startDate='September 2016'
+      endDate='April 2017'
       description={[
         'Responsive custom WordPress themes using HTML, SCSS, and JavaScript.',
         'Organization and facilitation of inter-server migration of 100+ sites.',
@@ -166,13 +167,13 @@ const Resume = () =>
         'Git'
       ]}
     />
-    <div className="year">2017</div>
+    <div className='year'>2017</div>
     <Job
-      classes="lane-1 length-1"
-      company="G/O Digital"
-      jobTitle="Web Development Associate"
-      startDate="January 2016"
-      endDate="September 2016"
+      classes='lane-1 length-1'
+      company='G/O Digital'
+      jobTitle='Web Development Associate'
+      startDate='January 2016'
+      endDate='September 2016'
       description={[
         'Maintenance, repair, and modification of custom WordPress themes.'
       ]}
@@ -186,13 +187,13 @@ const Resume = () =>
         'Git'
       ]}
     />
-    <div className="year">2016</div>
+    <div className='year'>2016</div>
     <Job
-      classes="lane-1 length-1"
-      company="Acxiom Corporation"
-      jobTitle="Digital Content Specialist Intern"
-      startDate="July 2015"
-      endDate="December 2015"
+      classes='lane-1 length-1'
+      company='Acxiom Corporation'
+      jobTitle='Digital Content Specialist Intern'
+      startDate='July 2015'
+      endDate='December 2015'
       description={[
         'Construction, modification, and QA of HTML email marketing templates.'
       ]}
@@ -200,13 +201,13 @@ const Resume = () =>
         'JavaScript',
         'Photoshop']}
     />
-    <div className="year">2015</div>
+    <div className='year'>2015</div>
     <Job
-      classes="lane-2 length-4"
-      company="Hereit.org"
-      title="Freelance Developer"
-      startDate="June 2013"
-      endDate="May 2015"
+      classes='lane-2 length-4'
+      company='Hereit.org'
+      title='Freelance Developer'
+      startDate='June 2013'
+      endDate='May 2015'
       description={[
         'Custom HTML5 audio player using jQuery.',
         'Repair and expansion of user-facing and administrative features with PHP and MySQL.',
@@ -224,18 +225,18 @@ const Resume = () =>
       ]}
     />
     <Job
-      classes="lane-1 align-self-end length-1"
-      company="Centre College IT Services"
-      jobTitle="Junior Developer"
-      startDate="September 2014"
-      endDate="January 2015"
+      classes='lane-1 align-self-end length-1'
+      company='Centre College IT Services'
+      jobTitle='Junior Developer'
+      startDate='September 2014'
+      endDate='January 2015'
       description={[
         'Construction, modification, and enhancement of student dashboard features.'
       ]}
       tech={['C#']}
     />
-    <div className="year">2014</div>
-    <div className="year">2013</div>
+    <div className='year'>2014</div>
+    <div className='year'>2013</div>
   </Page>
 
 

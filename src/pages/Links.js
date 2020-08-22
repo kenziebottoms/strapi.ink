@@ -78,11 +78,12 @@ const links = [
 ]
 
 const Links = () => 
-  <Page id="links">
+  <Page id='links'>
     {links.map(link => 
       <a
-        href={link.href} target="blank"
-        key={link.name} className="block">
+        href={link.href} target='blank'
+        key={link.name} className='block'
+      >
         <img
           src={images[link.name.toLowerCase().replace(/[\s&]/g, '')]}
           alt={link.name}

@@ -30,9 +30,9 @@ class ArtPost extends React.Component {
 
   render() {
     return (
-      <Page id="post" className="art">
-        <Link className="back" to="/art">
-          <i className="material-icons">chevron_left</i>
+      <Page id='post' className='art'>
+        <Link className='back' to='/art'>
+          <i className='material-icons'>chevron_left</i>
           Back to art
         </Link>
         {this.state.loading ? 
@@ -40,7 +40,7 @@ class ArtPost extends React.Component {
           : 
           <React.Fragment>
             <img src={this.state.post.image} alt={this.state.post.title} />
-            <div className="caption">
+            <div className='caption'>
               <h3>{this.state.post.title}</h3>
               <DateTag date={this.state.post.date} />
               <p dangerouslySetInnerHTML={{ __html: this.state.post.body }} />

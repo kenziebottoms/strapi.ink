@@ -43,7 +43,7 @@ class Sidebar extends React.Component {
 
   render() {
     return (
-      <ul id="sidebar">
+      <ul id='sidebar'>
         {this.routes().map(route => 
           <li key={route.name}>
             <Link
@@ -57,7 +57,7 @@ class Sidebar extends React.Component {
               }
             >
               {route.icon ? 
-                <i className="material-icons">{route.icon}</i>
+                <i className='material-icons'>{route.icon}</i>
                 : 
                 <Logo link={false} />
               }

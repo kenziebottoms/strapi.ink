@@ -3,8 +3,8 @@ import React from 'react'
 import Page from '../components/Page'
 
 const Pronouns = () => 
-  <Page className="blog">
-    <div className="block">
+  <Page className='blog'>
+    <div className='block'>
       <h1>What does 'they/them' mean?</h1>
       <p>
         In the context of blue being male and pink being female (which is itself

@@ -5,10 +5,10 @@ import Script from '../elements/Script'
 const CodePen = props => 
   <React.Fragment>
     <div
-      className="codepen"
-      data-theme-id="dark"
-      data-default-tab="result"
-      data-user="kenziebottoms"
+      className='codepen'
+      data-theme-id='dark'
+      data-default-tab='result'
+      data-user='kenziebottoms'
       data-slug-hash={props.hash}
       style={{
         boxSizing: 'border-box',
@@ -24,14 +24,14 @@ const CodePen = props =>
           {props.title}
         </a>{' '}
         by Kenzie Bottoms (
-        <a href="https://codepen.io/kenziebottoms">@kenziebottoms</a>) on{' '}
-        <a href="https://codepen.io">CodePen</a>.
+        <a href='https://codepen.io/kenziebottoms'>@kenziebottoms</a>) on{' '}
+        <a href='https://codepen.io'>CodePen</a>.
       </span>
     </div>
     <Script
       id={props.hash}
       async={true}
-      src="https://static.codepen.io/assets/embed/ei.js"
+      src='https://static.codepen.io/assets/embed/ei.js'
     />
   </React.Fragment>
 

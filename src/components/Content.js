@@ -16,23 +16,26 @@ import Links from '../pages/Links'
 class Content extends React.Component {
   render() {
     return (
-      <section id="content">
+      <section id='content'>
         <Switch>
           <Route
-            exact path="/"
-            component={Home} />
+            exact path='/'
+            component={Home}
+          />
           <Route
-            exact path="/art"
-            component={Art} />
-          <Route path="/art" component={ArtPost} />
+            exact path='/art'
+            component={Art}
+          />
+          <Route path='/art' component={ArtPost} />
           <Route
-            exact path="/code"
-            component={Code} />
-          <Route path="/code" component={CodePost} />
-          <Route path="/resume" component={Resume} />
-          <Route path="/achievements" component={Achievements} />
-          <Route path="/links" component={Links} />
-          <Route path="/pronouns" component={Pronouns} />
+            exact path='/code'
+            component={Code}
+          />
+          <Route path='/code' component={CodePost} />
+          <Route path='/resume' component={Resume} />
+          <Route path='/achievements' component={Achievements} />
+          <Route path='/links' component={Links} />
+          <Route path='/pronouns' component={Pronouns} />
         </Switch>
       </section>
     )

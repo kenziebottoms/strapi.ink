@@ -9,6 +9,6 @@ function formatDate(epochString) {
   return moment(date).format('MMMM D, YYYY')
 }
 
-const DateTag = props => <p className="date">{formatDate(props.date)}</p>
+const DateTag = props => <p className='date'>{formatDate(props.date)}</p>
 
 export default DateTag
