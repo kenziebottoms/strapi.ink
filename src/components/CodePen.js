@@ -1,8 +1,8 @@
-import React from 'react';
+import React from 'react'
 
-import Script from '../elements/Script';
+import Script from '../elements/Script'
 
-const CodePen = props => (
+const CodePen = props => 
   <React.Fragment>
     <div
       className="codepen"
@@ -15,7 +15,7 @@ const CodePen = props => (
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        padding: '1em',
+        padding: '1em'
       }}
     >
       <span>
@@ -34,6 +34,6 @@ const CodePen = props => (
       src="https://static.codepen.io/assets/embed/ei.js"
     />
   </React.Fragment>
-);
 
-export default CodePen;
+
+export default CodePen

@@ -1,6 +1,6 @@
-import React from 'react';
+import React from 'react'
 
-const Feat = props => (
+const Feat = props => 
   <div className="achievement">
     <i className="material-icons">{props.icon}</i>
     <div>
@@ -8,6 +8,6 @@ const Feat = props => (
       <p>{props.description}</p>
     </div>
   </div>
-);
 
-export default Feat;
+
+export default Feat

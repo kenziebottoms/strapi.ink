@@ -1,33 +1,33 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react'
+import { Link } from 'react-router-dom'
 
-import Page from '../components/Page';
-import LoadingIcon from '../elements/LoadingIcon';
-import DateTag from '../elements/DateTag';
-import CodePen from '../components/CodePen';
-import Script from '../elements/Script';
+import Page from '../components/Page'
+import LoadingIcon from '../elements/LoadingIcon'
+import DateTag from '../elements/DateTag'
+import CodePen from '../components/CodePen'
+import Script from '../elements/Script'
 
-import githubLogo from '../img/github.svg';
+import githubLogo from '../img/github.svg'
 
-import '../styles/pages/Post.scss';
+import '../styles/pages/Post.scss'
 
-import restDB from '../services/restDB';
+import restDB from '../services/restDB'
 
 class CodePost extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       post: null,
-      loading: true,
-    };
+      loading: true
+    }
   }
 
   componentDidMount() {
     restDB
       .codePost(this.props.location.pathname.split('/code/')[1])
       .then((json) => {
-        this.setState({ post: json, loading: false });
-      });
+        this.setState({ post: json, loading: false })
+      })
   }
 
   render() {
@@ -37,27 +37,27 @@ class CodePost extends React.Component {
           <i className="material-icons">chevron_left</i>
           Back to code
         </Link>
-        {this.state.loading ? (
+        {this.state.loading ? 
           <LoadingIcon active={this.state.loading} />
-        ) : (
+          : 
           <React.Fragment>
-            {this.state.post.codepen ? (
+            {this.state.post.codepen ? 
               <CodePen
                 title={this.state.post.title}
                 hash={this.state.post.codepen}
               />
-            ) : (
+              : 
               <React.Fragment>
-                {this.state.post.script ? (
+                {this.state.post.script ? 
                   <Script async={true} src={this.state.post.script} />
-                ) : (
+                  : 
                   <img
                     src={this.state.post.image}
                     alt={this.state.post.title + ' '}
                   />
-                )}
+                }
               </React.Fragment>
-            )}
+            }
             <div className="caption">
               <h3>{this.state.post.title}</h3>
               <DateTag date={this.state.post.date} />
@@ -65,28 +65,28 @@ class CodePost extends React.Component {
                 className="body"
                 dangerouslySetInnerHTML={{ __html: this.state.post.body }}
               />
-              {this.state.post.link && (
+              {this.state.post.link && 
                 <p className="link">
-                  <i class="material-icons">link</i>
+                  <i className="material-icons">link</i>
                   <a href={this.state.post.link} target="blank">
                     {this.state.post.link}
                   </a>
                 </p>
-              )}
-              {this.state.post.github && (
+              }
+              {this.state.post.github && 
                 <p className="github">
                   <img src={githubLogo} alt="GitHub" />
                   <a href={this.state.post.github} target="blank">
                     {this.state.post.github}
                   </a>
                 </p>
-              )}
+              }
             </div>
           </React.Fragment>
-        )}
+        }
       </Page>
-    );
+    )
   }
 }
 
-export default CodePost;
+export default CodePost

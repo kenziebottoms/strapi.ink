@@ -1,9 +1,9 @@
-import React from 'react';
+import React from 'react'
 
-import Page from '../components/Page';
-import Feat from '../elements/Feat';
+import Page from '../components/Page'
+import Feat from '../elements/Feat'
 
-import '../styles/pages/Achievements.scss';
+import '../styles/pages/Achievements.scss'
 
 const feats = [
   {
@@ -17,8 +17,8 @@ const feats = [
       >
         Jammer
       </a>,
-      ' in two derby bouts.',
-    ],
+      ' in two derby bouts.'
+    ]
   },
   {
     title: '1,667 Words A Day',
@@ -28,18 +28,18 @@ const feats = [
       <a href="https://nanowrimo.org/about" target="blank">
         NaNoWriMo
       </a>,
-      '.',
-    ],
+      '.'
+    ]
   },
   {
     title: 'Color Coded',
     icon: 'brush',
-    description: 'Write your own color theme for a text editor.',
+    description: 'Write your own color theme for a text editor.'
   },
   {
     title: 'Bulletproof',
     icon: 'security',
-    description: 'Write 100% test coverage for a unit of code.',
+    description: 'Write 100% test coverage for a unit of code.'
   },
   {
     title: 'Jam On',
@@ -49,13 +49,13 @@ const feats = [
       <a href="https://en.wikipedia.org/wiki/Roller_derby#Jams" target="blank">
         one jam
       </a>,
-      '.',
-    ],
+      '.'
+    ]
   },
   {
     title: 'Finders Keepers',
     icon: 'healing',
-    description: 'Find a bug by writing automated tests.',
+    description: 'Find a bug by writing automated tests.'
   },
   {
     title: 'Goodwill Hunting',
@@ -65,13 +65,13 @@ const feats = [
       <a target="blank" href="https://www.gish.com/">
         Greatest International Scavenger Hunt
       </a>,
-      '.',
-    ],
+      '.'
+    ]
   },
   {
     title: 'Voila',
     icon: 'cast',
-    description: 'Demo a feature you built for a client.',
+    description: 'Demo a feature you built for a client.'
   },
   {
     title: 'It\'s Pronounced "Oiler"',
@@ -81,13 +81,13 @@ const feats = [
       <a href="https://projecteuler.net/about" target="blank">
         Project Euler
       </a>,
-      '.',
-    ],
+      '.'
+    ]
   },
   {
     title: 'Perfectionist',
     icon: 'access_time',
-    description: 'Spend more than 50 hours on a single piece of art.',
+    description: 'Spend more than 50 hours on a single piece of art.'
   },
   {
     title: 'Hacker Mode',
@@ -97,42 +97,42 @@ const feats = [
       <a href="https://ohmyz.sh/" target="blank">
         Zsh
       </a>,
-      '.',
-    ],
+      '.'
+    ]
   },
   {
     title: 'Mother May I?',
     icon: 'merge_type',
-    description: 'Write 100 pull requests.',
+    description: 'Write 100 pull requests.'
   },
   {
     title: 'Buckle Up',
     icon: 'send',
-    description: 'Merge 100 branches into master.',
+    description: 'Merge 100 branches into master.'
   },
   {
     title: 'Pushover',
     icon: 'assignment_turned_in',
-    description: 'Approve 50 pull requests.',
+    description: 'Approve 50 pull requests.'
   },
   {
     title: 'Shrug Emoji',
     icon: 'tag_faces',
-    description: 'Create 30 Slack emojis.',
-  },
-];
+    description: 'Create 30 Slack emojis.'
+  }
+]
 
-const Achievements = () => (
+const Achievements = () => 
   <Page id="achievements">
     <h1>Achievements</h1>
-    {feats.map((feat) => (
+    {feats.map((feat) => 
       <Feat
         title={feat.title}
         description={feat.description}
         icon={feat.icon}
       />
-    ))}
+    )}
   </Page>
-);
 
-export default Achievements;
+
+export default Achievements

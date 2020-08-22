@@ -1,8 +1,8 @@
-import React from 'react';
+import React from 'react'
 
-import '../styles/elements/Copyright.scss';
+import '../styles/elements/Copyright.scss'
 
-const Copyright = () => (
+const Copyright = () => 
   <a
     id="copyright"
     href="https://github.com/kenziebottoms/kenziebottoms.github.io"
@@ -10,6 +10,6 @@ const Copyright = () => (
   >
     Source on GitHub
   </a>
-);
 
-export default Copyright;
+
+export default Copyright

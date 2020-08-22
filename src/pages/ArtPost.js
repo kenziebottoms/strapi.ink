@@ -1,21 +1,21 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react'
+import { Link } from 'react-router-dom'
 
-import Page from '../components/Page';
-import LoadingIcon from '../elements/LoadingIcon';
-import DateTag from '../elements/DateTag';
+import Page from '../components/Page'
+import LoadingIcon from '../elements/LoadingIcon'
+import DateTag from '../elements/DateTag'
 
-import '../styles/pages/Post.scss';
+import '../styles/pages/Post.scss'
 
-import restDB from '../services/restDB';
+import restDB from '../services/restDB'
 
 class ArtPost extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       post: null,
-      loading: true,
-    };
+      loading: true
+    }
   }
 
   componentDidMount() {
@@ -23,9 +23,9 @@ class ArtPost extends React.Component {
       .artPost(this.props.location.pathname.split('/art/')[1])
       .then(json => {
         // make all links open in new tabs
-        json.body = json.body.replace('<a ', "<a target='_blank' ");
-        this.setState({ post: json, loading: false });
-      });
+        json.body = json.body.replace('<a ', '<a target=\'_blank\' ')
+        this.setState({ post: json, loading: false })
+      })
   }
 
   render() {
@@ -35,9 +35,9 @@ class ArtPost extends React.Component {
           <i className="material-icons">chevron_left</i>
           Back to art
         </Link>
-        {this.state.loading ? (
+        {this.state.loading ? 
           <LoadingIcon active={this.state.loading} />
-        ) : (
+          : 
           <React.Fragment>
             <img src={this.state.post.image} alt={this.state.post.title} />
             <div className="caption">
@@ -46,10 +46,10 @@ class ArtPost extends React.Component {
               <p dangerouslySetInnerHTML={{ __html: this.state.post.body }} />
             </div>
           </React.Fragment>
-        )}
+        }
       </Page>
-    );
+    )
   }
 }
 
-export default ArtPost;
+export default ArtPost

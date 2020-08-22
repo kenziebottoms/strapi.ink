@@ -1,11 +1,11 @@
-import React from 'react';
+import React from 'react'
 
-import Page from '../components/Page';
-import TileGrid from '../components/TileGrid';
+import Page from '../components/Page'
+import TileGrid from '../components/TileGrid'
 
-import restDb from '../services/restDB';
+import restDb from '../services/restDB'
 
-const Art = () => (
+const Art = () => 
   <Page id="art">
     <TileGrid dataSource={restDb.allArtPosts()} linkHead="art">
       <blockquote className="commissions">
@@ -19,6 +19,6 @@ const Art = () => (
       </blockquote>
     </TileGrid>
   </Page>
-);
 
-export default Art;
+
+export default Art

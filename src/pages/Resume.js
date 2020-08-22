@@ -1,10 +1,10 @@
-import React from 'react';
+import React from 'react'
 
-import Page from '../components/Page';
-import Job from '../components/Job';
-import '../styles/pages/Resume.scss';
+import Page from '../components/Page'
+import Job from '../components/Job'
+import '../styles/pages/Resume.scss'
 
-const Resume = () => (
+const Resume = () => 
   <Page id="resume">
     <div id="green-border" />
     <h1 className="lane-1">Full-time</h1>
@@ -15,10 +15,14 @@ const Resume = () => (
       jobTitle="React Developer"
       startDate="June 2020"
       description={[
-        'Automated testing for a large legacy codebase.',
-        'Documentation for a large legacy codebase.',
+        'Automated testing for a large legacy codebase.', 'Documentation for a large legacy codebase.'
       ]}
-      tech={['Git', 'React', 'Jest', 'Webpack', 'CSS/SCSS', 'Azure DevOps']}
+      tech={['Git',
+        'React',
+        'Jest',
+        'Webpack',
+        'CSS/SCSS',
+        'Azure DevOps']}
     />
     <Job
       classes="lane-1 length-4"
@@ -32,7 +36,7 @@ const Resume = () => (
         'Responsive, interactive custom WordPress themes using jQuery, Bootstrap, and SCSS, featuring secondary custom user dashboard functionality.',
         'Interactive, filterable map views on an Elixir/Phoenix app using Leaflet and React.',
         'AWS S3 file storage and SendGrid email integration with an Elixir/Phoenix app.',
-        'Automated testing, QA processes, and bug fixes for large legacy Java codebase.',
+        'Automated testing, QA processes, and bug fixes for large legacy Java codebase.'
       ]}
       tech={[
         'Git',
@@ -47,7 +51,7 @@ const Resume = () => (
         'SendGrid',
         'CSS/SCSS',
         'Java',
-        'JUnit',
+        'JUnit'
       ]}
     />
     <div className="year">2020</div>
@@ -65,10 +69,14 @@ const Resume = () => (
           <a href="https://roots.io/" target="blank">
             Roots.io
           </a>,
-          '.',
-        ],
+          '.'
+        ]
       ]}
-      tech={['HTML', 'CSS/SCSS', 'jQuery', 'WordPress', 'PHP']}
+      tech={['HTML',
+        'CSS/SCSS',
+        'jQuery',
+        'WordPress',
+        'PHP']}
     />
     <Job
       classes="lane-1 length-1"
@@ -83,7 +91,7 @@ const Resume = () => (
         'Single-page applications using JavaScript, jQuery, and AngularJS.',
         'Task management using Grunt with JSHint, Browserify, SCSS, etc.',
         'Server-side, test-driven Node development using Express, Chai, and Mocha.',
-        'Schema design, database organization, and API construction.',
+        'Schema design, database organization, and API construction.'
       ]}
       tech={[
         'Git',
@@ -96,7 +104,7 @@ const Resume = () => (
         'HTML/HAML',
         'Grunt/Gulp',
         'Mocha & Chai testing',
-        'MySQL',
+        'MySQL'
       ]}
     />
     <Job
@@ -106,10 +114,12 @@ const Resume = () => (
       startDate="January 2018"
       endDate="August 2018"
       description={[
-        'Design and implementation of custom archive pages.',
-        'Optimization, modification, and maintenance of a custom WordPress theme.',
+        'Design and implementation of custom archive pages.', 'Optimization, modification, and maintenance of a custom WordPress theme.'
       ]}
-      tech={['HTML', 'jQuery', 'WordPress', 'PHP']}
+      tech={['HTML',
+        'jQuery',
+        'WordPress',
+        'PHP']}
     />
     <div className="year">2018</div>
     <Job
@@ -119,10 +129,13 @@ const Resume = () => (
       startDate="June 2017"
       endDate="September 2017"
       description={[
-        'Repair and optimization of existing WordPress sites.',
-        'Design and implementation of custom landing pages.',
+        'Repair and optimization of existing WordPress sites.', 'Design and implementation of custom landing pages.'
       ]}
-      tech={['HTML', 'jQuery', 'CSS/SCSS', 'WordPress', 'PHP']}
+      tech={['HTML',
+        'jQuery',
+        'CSS/SCSS',
+        'WordPress',
+        'PHP']}
     />
 
     <Job
@@ -136,7 +149,7 @@ const Resume = () => (
         'Organization and facilitation of inter-server migration of 100+ sites.',
         'Direct customer correspondence regarding site maintenance and updates.',
         'Maintenance, repair, and modification of custom WordPress themes.',
-        'Server organization and maintenance using Python scripting.',
+        'Server organization and maintenance using Python scripting.'
       ]}
       tech={[
         'Python',
@@ -146,7 +159,7 @@ const Resume = () => (
         'WordPress',
         'PHP',
         'ExpressionEngine',
-        'Git',
+        'Git'
       ]}
     />
     <div className="year">2017</div>
@@ -157,7 +170,7 @@ const Resume = () => (
       startDate="January 2016"
       endDate="September 2016"
       description={[
-        'Maintenance, repair, and modification of custom WordPress themes.',
+        'Maintenance, repair, and modification of custom WordPress themes.'
       ]}
       tech={[
         'HTML',
@@ -166,7 +179,7 @@ const Resume = () => (
         'WordPress',
         'PHP',
         'ExpressionEngine',
-        'Git',
+        'Git'
       ]}
     />
     <div className="year">2016</div>
@@ -177,9 +190,11 @@ const Resume = () => (
       startDate="July 2015"
       endDate="December 2015"
       description={[
-        'Construction, modification, and QA of HTML email marketing templates.',
+        'Construction, modification, and QA of HTML email marketing templates.'
       ]}
-      tech={['HTML', 'JavaScript', 'Photoshop']}
+      tech={['HTML',
+        'JavaScript',
+        'Photoshop']}
     />
     <div className="year">2015</div>
     <Job
@@ -192,7 +207,7 @@ const Resume = () => (
         'Custom HTML5 audio player using jQuery.',
         'Repair and expansion of user-facing and administrative features with PHP and MySQL.',
         'Implementation of a front-end redesign with CSS3.',
-        'Stripe e-commerce subscriptions and payments with jQuery/Ajax.',
+        'Stripe e-commerce subscriptions and payments with jQuery/Ajax.'
       ]}
       tech={[
         'HTML',
@@ -201,7 +216,7 @@ const Resume = () => (
         'MySQL',
         'JavaScript',
         'jQuery',
-        'Stripe e-Commerce',
+        'Stripe e-Commerce'
       ]}
     />
     <Job
@@ -211,13 +226,13 @@ const Resume = () => (
       startDate="September 2014"
       endDate="January 2015"
       description={[
-        'Construction, modification, and enhancement of student dashboard features.',
+        'Construction, modification, and enhancement of student dashboard features.'
       ]}
       tech={['C#']}
     />
     <div className="year">2014</div>
     <div className="year">2013</div>
   </Page>
-);
 
-export default Resume;
+
+export default Resume

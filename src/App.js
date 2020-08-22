@@ -1,9 +1,9 @@
-import React, { Fragment } from 'react';
+import React, { Fragment } from 'react'
 
-import Sidebar from './components/Sidebar';
-import Content from './components/Content';
+import Sidebar from './components/Sidebar'
+import Content from './components/Content'
 
-import './styles/App.scss';
+import './styles/App.scss'
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       <Sidebar />
       <Content />
     </Fragment>
-  );
+  )
 }
 
-export default App;
+export default App

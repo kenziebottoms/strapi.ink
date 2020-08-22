@@ -1,9 +1,9 @@
-import React from 'react';
-import { Link, withRouter } from 'react-router-dom';
+import React from 'react'
+import { Link, withRouter } from 'react-router-dom'
 
-import Logo from '../elements/Logo';
+import Logo from '../elements/Logo'
 
-import '../styles/components/Sidebar.scss';
+import '../styles/components/Sidebar.scss'
 
 class Sidebar extends React.Component {
   routes() {
@@ -11,62 +11,62 @@ class Sidebar extends React.Component {
       {
         name: 'home',
         path: '/',
-        icon: false,
+        icon: false
       },
       {
         name: 'art',
         path: '/art',
-        icon: 'color_lens',
+        icon: 'color_lens'
       },
       {
         name: 'code',
         path: '/code',
-        icon: 'code',
+        icon: 'code'
       },
       {
         name: 'resume',
         path: '/resume',
-        icon: 'assignment_ind',
+        icon: 'assignment_ind'
       },
       {
         name: 'feats',
         path: '/achievements',
-        icon: 'stars',
+        icon: 'stars'
       },
       {
         name: 'links',
         path: '/links',
-        icon: 'launch',
-      },
-    ];
+        icon: 'launch'
+      }
+    ]
   }
 
   render() {
     return (
       <ul id="sidebar">
-        {this.routes().map(route => (
+        {this.routes().map(route => 
           <li key={route.name}>
             <Link
               to={route.path}
               className={
-                (route.icon &&
-                  this.props.location.pathname.indexOf(route.path) >= 0) ||
-                (!route.icon && this.props.location.pathname === '/')
+                route.icon &&
+                  this.props.location.pathname.indexOf(route.path) >= 0 ||
+                !route.icon && this.props.location.pathname === '/'
                   ? 'active'
                   : ''
               }
             >
-              {route.icon ? (
+              {route.icon ? 
                 <i className="material-icons">{route.icon}</i>
-              ) : (
+                : 
                 <Logo link={false} />
-              )}
+              }
               <label>{route.name}</label>
             </Link>
           </li>
-        ))}
+        )}
       </ul>
-    );
+    )
   }
 }
-export default withRouter(Sidebar);
+export default withRouter(Sidebar)

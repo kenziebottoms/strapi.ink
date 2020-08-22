@@ -1,11 +1,11 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react'
+import { Link } from 'react-router-dom'
 
-import Page from '../components/Page';
+import Page from '../components/Page'
 
-import '../styles/pages/Home.scss';
+import '../styles/pages/Home.scss'
 
-const Home = () => (
+const Home = () => 
   <Page id="home">
     <div id="bio" className="block wide">
       <p>
@@ -54,6 +54,6 @@ const Home = () => (
       Achievements
     </Link>
   </Page>
-);
 
-export default Home;
+
+export default Home

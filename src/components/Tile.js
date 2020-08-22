@@ -1,7 +1,7 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react'
+import { Link } from 'react-router-dom'
 
-import '../styles/components/Tile.scss';
+import '../styles/components/Tile.scss'
 
 function formatDate(epoch) {
   const months = [
@@ -16,13 +16,13 @@ function formatDate(epoch) {
     'September',
     'October',
     'November',
-    'December',
-  ];
-  let d = new Date(epoch);
-  return `${months[d.getMonth()]} ${d.getDate()}, ${d.getFullYear()}`;
+    'December'
+  ]
+  let d = new Date(epoch)
+  return `${months[d.getMonth()]} ${d.getDate()}, ${d.getFullYear()}`
 }
 
-const Tile = props => (
+const Tile = props => 
   <div
     className="art tile"
     key={props.post._id}
@@ -35,6 +35,6 @@ const Tile = props => (
       </div>
     </Link>
   </div>
-);
 
-export default Tile;
+
+export default Tile

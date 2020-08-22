@@ -1,8 +1,8 @@
-import React from 'react';
+import React from 'react'
 
-import Page from '../components/Page';
+import Page from '../components/Page'
 
-const Pronouns = () => (
+const Pronouns = () => 
   <Page className="blog">
     <div className="block">
       <h1>What does 'they/them' mean?</h1>
@@ -41,6 +41,6 @@ const Pronouns = () => (
       </p>
     </div>
   </Page>
-);
 
-export default Pronouns;
+
+export default Pronouns

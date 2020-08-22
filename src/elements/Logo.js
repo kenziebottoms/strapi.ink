@@ -1,7 +1,9 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react'
+import { Link } from 'react-router-dom'
 
-const svg = (
+/*eslint { 'max-len': 0 }*/
+
+const svg = 
   <svg xmlns="http://www.w3.org/2000/svg" height="34" width="34">
     <path d="M0 10h24v24H0z" fill="none" />
     <path d="M.321 59.766h23.358v2.997H.321z" fill="#000" fillRule="evenodd" />
@@ -11,10 +13,10 @@ const svg = (
       fill="#000"
     />
   </svg>
-);
+
 
 const Logo = props => {
-  return props.link ? <Link to="/">{svg}</Link> : svg;
-};
+  return props.link ? <Link to="/">{svg}</Link> : svg
+}
 
-export default Logo;
+export default Logo

@@ -1,13 +1,13 @@
-import React from 'react';
+import React from 'react'
 
-import icon from '../img/loading.svg';
+import icon from '../img/loading.svg'
 
-import '../styles/elements/LoadingIcon.scss';
+import '../styles/elements/LoadingIcon.scss'
 
-const LoadingIcon = props => (
+const LoadingIcon = () => 
   <div id="loading">
     <img src={icon} alt="Loading..." />
   </div>
-);
 
-export default LoadingIcon;
+
+export default LoadingIcon
