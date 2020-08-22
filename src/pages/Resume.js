@@ -4,6 +4,8 @@ import Page from '../components/Page'
 import Job from '../components/Job'
 import '../styles/pages/Resume.scss'
 
+/*eslint { 'max-len': 0 }*/
+
 const Resume = () => 
   <Page id="resume">
     <div id="green-border" />
@@ -66,7 +68,9 @@ const Resume = () =>
       description={[
         [
           'Responsive custom WordPress themes built with ',
-          <a href="https://roots.io/" target="blank">
+          <a
+            key={1} href="https://roots.io/"
+            target="blank">
             Roots.io
           </a>,
           '.'

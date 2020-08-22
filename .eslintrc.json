@@ -29,6 +29,8 @@
     "semi": ["error", "never"],
     "space-in-parens": ["error", "never"],
     "space-infix-ops": 2,
+    "react/jsx-first-prop-new-line": ["error", "multiline"],
+    "react/jsx-max-props-per-line": ["error", { "maximum": 2 }],
     "react/no-unescaped-entities": ["error", { "forbid": [">", "<"] }],
     "react/prop-types": 0,
     "yoda": ["error", "never"]

@@ -12,6 +12,7 @@ const feats = [
     description: [
       'Be awarded Most Valuable ',
       <a
+        key={1}
         href="https://en.wikipedia.org/wiki/Roller_derby#Basics_of_play"
         target="blank"
       >
@@ -25,7 +26,9 @@ const feats = [
     icon: 'chrome_reader_mode',
     description: [
       'Beat ',
-      <a href="https://nanowrimo.org/about" target="blank">
+      <a
+        key={1} href="https://nanowrimo.org/about"
+        target="blank">
         NaNoWriMo
       </a>,
       '.'
@@ -46,7 +49,9 @@ const feats = [
     icon: 'stars',
     description: [
       'Score 20 points in ',
-      <a href="https://en.wikipedia.org/wiki/Roller_derby#Jams" target="blank">
+      <a
+        key={1} href="https://en.wikipedia.org/wiki/Roller_derby#Jams"
+        target="blank">
         one jam
       </a>,
       '.'
@@ -62,7 +67,9 @@ const feats = [
     icon: 'toys',
     description: [
       'Earn 5000 points in the ',
-      <a target="blank" href="https://www.gish.com/">
+      <a
+        key={1} target="blank"
+        href="https://www.gish.com/">
         Greatest International Scavenger Hunt
       </a>,
       '.'
@@ -78,7 +85,9 @@ const feats = [
     icon: 'functions',
     description: [
       'Solve 25 problems on ',
-      <a href="https://projecteuler.net/about" target="blank">
+      <a
+        key={1} href="https://projecteuler.net/about"
+        target="blank">
         Project Euler
       </a>,
       '.'
@@ -94,7 +103,9 @@ const feats = [
     icon: 'keyboard',
     description: [
       'Write 20 aliases for ',
-      <a href="https://ohmyz.sh/" target="blank">
+      <a
+        key={1} href="https://ohmyz.sh/"
+        target="blank">
         Zsh
       </a>,
       '.'
@@ -125,8 +136,9 @@ const feats = [
 const Achievements = () => 
   <Page id="achievements">
     <h1>Achievements</h1>
-    {feats.map((feat) => 
+    {feats.map((feat, i) => 
       <Feat
+        key={i}
         title={feat.title}
         description={feat.description}
         icon={feat.icon}

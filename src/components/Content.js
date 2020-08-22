@@ -18,10 +18,16 @@ class Content extends React.Component {
     return (
       <section id="content">
         <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/art" component={Art} />
+          <Route
+            exact path="/"
+            component={Home} />
+          <Route
+            exact path="/art"
+            component={Art} />
           <Route path="/art" component={ArtPost} />
-          <Route exact path="/code" component={Code} />
+          <Route
+            exact path="/code"
+            component={Code} />
           <Route path="/code" component={CodePost} />
           <Route path="/resume" component={Resume} />
           <Route path="/achievements" component={Achievements} />

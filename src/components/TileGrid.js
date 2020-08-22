@@ -29,7 +29,9 @@ class TileGrid extends React.Component {
           <Fragment>
             {this.props.children}
             {this.state.posts.map(post => 
-              <Tile key={post._id} post={post} linkHead={this.props.linkHead} />
+              <Tile
+                key={post._id} post={post}
+                linkHead={this.props.linkHead} />
             )}
           </Fragment>
         }
