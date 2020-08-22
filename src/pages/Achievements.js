@@ -18,7 +18,7 @@ const feats = [
       >
         Jammer
       </a>,
-      ' in two derby bouts.'
+      ' in a derby bout.'
     ]
   },
   {
@@ -39,6 +39,20 @@ const feats = [
     title: 'Color Coded',
     icon: 'brush',
     description: 'Write your own color theme for a text editor.'
+  },
+  {
+    title: 'Hacker Mode',
+    icon: 'keyboard',
+    description: [
+      'Write 20 aliases for ',
+      <a
+        key={1} href='https://ohmyz.sh/'
+        target='blank'
+      >
+        Zsh
+      </a>,
+      '.'
+    ]
   },
   {
     title: 'Bulletproof',
@@ -103,23 +117,14 @@ const feats = [
     description: 'Spend more than 50 hours on a single piece of art.'
   },
   {
-    title: 'Hacker Mode',
-    icon: 'keyboard',
-    description: [
-      'Write 20 aliases for ',
-      <a
-        key={1} href='https://ohmyz.sh/'
-        target='blank'
-      >
-        Zsh
-      </a>,
-      '.'
-    ]
-  },
-  {
     title: 'Mother May I?',
     icon: 'merge_type',
     description: 'Write 100 pull requests.'
+  },
+  {
+    title: 'Sweat It Out',
+    icon: 'forward_10',
+    description: 'Skate 10 miles in one go.'
   },
   {
     title: 'Buckle Up',
