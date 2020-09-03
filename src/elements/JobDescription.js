@@ -1,10 +1,9 @@
 import React from 'react'
 
-const JobDescription = props => 
+const JobDescription = ({ description }) => 
   <ul>
-    {props.description &&
-      props.description.map((item, i) => <li key={i}>{item}</li>)}
+    {description &&
+      description.map((item, i) => <li key={i}>{item}</li>)}
   </ul>
-
 
 export default JobDescription

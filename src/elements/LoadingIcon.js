@@ -9,5 +9,4 @@ const LoadingIcon = () =>
     <img src={icon} alt='Loading...' />
   </div>
 
-
 export default LoadingIcon

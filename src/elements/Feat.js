@@ -1,13 +1,12 @@
 import React from 'react'
 
-const Feat = props => 
+const Feat = ({ icon, title, description }) => 
   <div className='achievement'>
-    <i className='material-icons'>{props.icon}</i>
+    <i className='material-icons'>{icon}</i>
     <div>
-      <h3>{props.title}</h3>
-      <p>{props.description}</p>
+      <h3>{title}</h3>
+      <p>{description}</p>
     </div>
   </div>
-
 
 export default Feat

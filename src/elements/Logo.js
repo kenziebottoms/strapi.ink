@@ -21,8 +21,6 @@ const svg =
   </svg>
 
 
-const Logo = props => {
-  return props.link ? <Link to='/'>{svg}</Link> : svg
-}
+const Logo = ({ link }) => link ? <Link to='/'>{svg}</Link> : svg
 
 export default Logo
