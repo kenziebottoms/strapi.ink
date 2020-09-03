@@ -41,6 +41,14 @@ class Sidebar extends React.Component {
     ]
   }
 
+  isActive(route) {
+    if (route.icon) {
+      return this.props.location.pathname.indexOf(route.path) >= 0
+    } else {
+      return this.props.location.pathname === '/' 
+    }
+  }
+
   render() {
     return (
       <ul id='sidebar'>
@@ -48,13 +56,7 @@ class Sidebar extends React.Component {
           <li key={route.name}>
             <Link
               to={route.path}
-              className={
-                route.icon &&
-                  this.props.location.pathname.indexOf(route.path) >= 0 ||
-                !route.icon && this.props.location.pathname === '/'
-                  ? 'active'
-                  : ''
-              }
+              className={this.isActive(route) ? 'active' : '' }
             >
               {route.icon ? 
                 <i className='material-icons'>{route.icon}</i>
