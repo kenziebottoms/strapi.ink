@@ -17,14 +17,21 @@ const Resume = () =>
       jobTitle='React Developer'
       startDate='June 2020'
       description={[
-        'Automated testing for a large legacy codebase.', 'Documentation for a large legacy codebase.'
+        'A dynamic dashboard for customer management using Redux and Redux-Saga.',
+        'A dynamic customer experienced based on a large array of persistent user-defined settings.',
+        'Automated testing for utility functions and sagas.',
+        'Documentation for a large legacy codebase.'
       ]}
-      tech={['Git',
+      tech={[
+        'Git',
         'React',
+        'React Redux',
+        'Redux-Saga',
         'Jest',
         'Webpack',
         'CSS/SCSS',
-        'Azure DevOps']}
+        'Azure DevOps'
+      ]}
     />
     <Job
       classes='lane-1 length-4'
