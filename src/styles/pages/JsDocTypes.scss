@@ -9,7 +9,7 @@
         display: flex;
         flex-wrap: wrap;
         li {
-            font-family: monospace;
+            @extend .monospace;
             padding: 0.25rem 1rem;
             &:nth-child(2n + 1) {
                 background: rgba($green, 0.2);
@@ -23,7 +23,7 @@
                 white-space: nowrap;
             }
             &:last-child {
-                font-family: monospace;
+                @extend .monospace;
                 font-size: 1rem;
             }
         }

@@ -21,8 +21,12 @@ body {
     }
 }
 
+.monospace {
+    font-family: 'Source Code Pro', monospace;
+}
 pre {
     white-space: pre-wrap;
+    @extend .monospace;
 }
 
 .blockquote {
