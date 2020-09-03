@@ -1,6 +1,6 @@
 import React from 'react'
 
-import TechTree from '../elements/TechTree'
+import TechList from '../elements/TechList'
 import JobDescription from '../elements/JobDescription'
 
 const Job = props => 
@@ -11,7 +11,7 @@ const Job = props =>
       {props.startDate}{' — '}{props.endDate || 'present'}
     </p>
     <JobDescription description={props.description} />
-    <TechTree tech={props.tech} />
+    <TechList tech={props.tech} />
   </article>
 
 

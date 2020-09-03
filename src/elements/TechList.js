@@ -1,14 +1,13 @@
 import React from 'react'
 
-const TechTree = props => 
+const TechList = ({ tech }) => 
   <div className='tech'>
-    {props.tech &&
-      props.tech.map((tech, i) => 
+    {tech &&
+      tech.map((name, i) => 
         <span key={i} className='tag'>
-          {tech}
+          {name}
         </span>
       )}
   </div>
 
-
-export default TechTree
+export default TechList
