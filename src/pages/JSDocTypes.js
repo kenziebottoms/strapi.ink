@@ -18,6 +18,8 @@ const JsDocTypes = () =>
 `}
       </CodeSnippet>
 
+      <h2>The basics</h2>
+
       <ul className='flex'>
         <li>null</li>
         <li>undefined</li>
@@ -27,6 +29,30 @@ const JsDocTypes = () =>
         <li>Object</li>
         <li>Array</li>
       </ul>
+
+      <h2>Edge cases</h2>
+      <table>
+        <tr>
+          <td>optional</td>
+          <td>{'@param {string} [label] - We can go without'}</td>
+        </tr>
+        <tr>
+          <td>list</td>
+          <td>{'@param {number[]} fib - Better than the last two variables combined'}</td>
+        </tr>
+        <tr>
+          <td>multiple types</td>
+          <td>{'@param {string|number} age - We can handle a string'}</td>
+        </tr>
+        <tr>
+          <td>object properties</td>
+          <td>{'@param {number} family.children - Dogs don\'t count'}</td>
+        </tr>
+        <tr>
+          <td>wildcard</td>
+          <td>{'@param {*} gender - No binaries here'}</td>
+        </tr>
+      </table>
     </div>
   </Page>
 

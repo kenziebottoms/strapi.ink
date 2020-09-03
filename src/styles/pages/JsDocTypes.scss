@@ -16,4 +16,16 @@
             }
         }
     }
+    table {
+        td {
+            padding: 0.75rem 1.25rem;
+            &:first-child {
+                white-space: nowrap;
+            }
+            &:last-child {
+                font-family: monospace;
+                font-size: 1rem;
+            }
+        }
+    }
 }
