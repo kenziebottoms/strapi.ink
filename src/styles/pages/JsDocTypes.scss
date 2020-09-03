@@ -1,0 +1,19 @@
+@import '../colors';
+@import '../App.scss';
+
+#jsdoc {
+    ul.flex {
+        list-style-type: none;
+        @extend .blockquote;
+        font-size: 1.1rem;
+        display: flex;
+        flex-wrap: wrap;
+        li {
+            font-family: monospace;
+            padding: 0.25rem 1rem;
+            &:nth-child(2n + 1) {
+                background: rgba($green, 0.2);
+            }
+        }
+    }
+}

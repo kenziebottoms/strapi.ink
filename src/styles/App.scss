@@ -21,7 +21,11 @@ body {
     }
 }
 
-blockquote {
+pre {
+    white-space: pre-wrap;
+}
+
+.blockquote {
     background: rgba($green, 0.15);
     padding: 1rem;
     font-weight: 300;
@@ -30,6 +34,19 @@ blockquote {
     margin: 0;
     line-height: 1.45;
     padding-left: 1rem;
+}
+blockquote {
+    @extend .blockquote;
+}
+
+table {
+    font-size: 1.2rem;
+    td {
+        padding: 0.25rem 1rem;
+    }
+    tr:nth-child(2n + 1) {
+        background: rgba($bg, 0.8);
+    }
 }
 
 .material-icons {

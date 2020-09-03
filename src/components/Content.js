@@ -12,6 +12,7 @@ import CodePost from '../pages/CodePost'
 import Resume from '../pages/Resume'
 import Achievements from '../pages/Achievements'
 import Links from '../pages/Links'
+import JsDocTypes from '../pages/JsDocTypes'
 
 class Content extends React.Component {
   render() {
@@ -36,6 +37,7 @@ class Content extends React.Component {
           <Route path='/achievements' component={Achievements} />
           <Route path='/links' component={Links} />
           <Route path='/pronouns' component={Pronouns} />
+          <Route path='/cheatsheet/jsdoc-types' component={JsDocTypes} />
         </Switch>
       </section>
     )
