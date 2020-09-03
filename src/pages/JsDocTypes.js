@@ -9,8 +9,10 @@ const JsDocTypes = () =>
   <Page id='jsdoc' className='blog'>
     <div className='block'>
       <h1>
-        Cheatsheet:
-        <a href='https://jsdoc.app/tags-type.html' target='_blank'>JSDoc</a>
+        Cheatsheet:{' '}
+        <a href='https://jsdoc.app/tags-type.html' target='_blank'>
+          JSDoc
+        </a>{' '}
         types
       </h1>
 
