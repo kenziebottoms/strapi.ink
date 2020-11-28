@@ -1,0 +1,46 @@
+{
+  "kind": "singleType",
+  "collectionName": "arts",
+  "info": {
+    "name": "Art"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "unique": true,
+      "maxLength": 50,
+      "required": true
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "Preview": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "Gallery": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "Date": {
+      "type": "date",
+      "required": true,
+      "unique": false
+    }
+  }
+}
