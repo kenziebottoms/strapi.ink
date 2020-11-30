@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 import '../styles/components/Tile.scss'
 
-function formatDate(epoch) {
+function formatDate(date) {
   const months = [
     'January',
     'February',
@@ -16,22 +16,33 @@ function formatDate(epoch) {
     'September',
     'October',
     'November',
-    'December'
+    'December',
   ]
-  let d = new Date(epoch)
+  let d = new Date(date + 'T00:00:00.000')
   return `${months[d.getMonth()]} ${d.getDate()}, ${d.getFullYear()}`
 }
 
-const Tile = props => 
+const Tile = ({
+  linkHead,
+  post: {
+    id,
+    Title,
+    Date,
+    Slug,
+    Preview: {
+      name: thumbnail,
+    },
+  },
+}) =>
   <div
     className='art tile'
-    key={props.post._id}
-    style={{ backgroundImage: `url(${props.post.thumbnail})` }}
+    key={id}
+    style={{ backgroundImage: `url(${thumbnail})` }}
   >
-    <Link to={props.linkHead + '/' + props.post._id}>
+    <Link to={linkHead + '/' + Slug}>
       <div className='overlay'>
-        <h3>{props.post.title}</h3>
-        <div className='date'>{formatDate(props.post.date * 1000)}</div>
+        <h3>{Title}</h3>
+        <div className='date'>{formatDate(Date)}</div>
       </div>
     </Link>
   </div>
