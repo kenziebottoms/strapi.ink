@@ -26,6 +26,7 @@
     "multiline-comment-style": ["error", "starred-block"],
     "no-extra-parens": "error",
     "no-multi-spaces": "error",
+    "no-multiple-empty-lines": "error",
     "no-shadow": "error",
     "no-trailing-spaces": "error",
     "object-curly-spacing": ["error", "always"],
