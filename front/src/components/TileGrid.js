@@ -32,7 +32,7 @@ const TileGrid = ({
           {children}
           {posts.map((post) =>
             <Tile
-              key={post._id}
+              key={post.id}
               post={post}
               linkHead={linkHead}
             />,
